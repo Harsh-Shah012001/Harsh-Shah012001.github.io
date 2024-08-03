@@ -895,7 +895,9 @@ section,
   opacity: 1;
 }
 
-
+.portfolio .portfolio-content:hover img {
+  transform: scale(1);
+}
 
 /*--------------------------------------------------------------
 # Services Section
