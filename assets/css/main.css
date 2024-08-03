@@ -809,6 +809,15 @@ section,
   margin-left: 0;
 }
 
+/* Add this to your CSS file */
+
+.portfolio-content img {
+  width: 100%;
+  height: 300px; /* Set a fixed height */
+  object-fit: cover; /* This ensures the image covers the entire area while maintaining its aspect ratio */
+}
+
+
 .portfolio .portfolio-filters li:last-child {
   margin-right: 0;
 }
@@ -886,9 +895,7 @@ section,
   opacity: 1;
 }
 
-.portfolio .portfolio-content:hover img {
-  transform: scale(1.1);
-}
+
 
 /*--------------------------------------------------------------
 # Services Section
