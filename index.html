@@ -4,340 +4,348 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <script>document.documentElement.classList.add('js');</script>
   <title>Harsh Shah — Software Engineer</title>
-  <meta name="description" content="Harsh Shah — full-stack software engineer & ML enthusiast. MS in Computer Science @ Northeastern University. A portfolio built as a code editor.">
-  <meta name="keywords" content="Harsh Shah, Software Engineer, Full Stack Developer, Machine Learning, Northeastern University, Portfolio">
+  <meta name="description" content="Harsh Shah — full-stack software engineer & ML enthusiast in New York City. MS in Computer Science from Northeastern University. I build AI/RAG platforms, data pipelines, and production web apps.">
+  <meta name="keywords" content="Harsh Shah, Software Engineer, Full Stack Developer, Machine Learning, MLOps, Northeastern University, Portfolio">
   <meta name="author" content="Harsh Shah">
   <meta property="og:title" content="Harsh Shah — Software Engineer">
-  <meta property="og:description" content="Full-stack software engineer & ML enthusiast. MS in Computer Science @ Northeastern University.">
+  <meta property="og:description" content="Full-stack software engineer & ML enthusiast. MS in Computer Science from Northeastern University.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/img/my-profile-img.jpg">
 
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="win">
 
-    <!-- Title bar -->
-    <div class="titlebar">
-      <button class="menu-btn" id="menu-btn" aria-label="Toggle file explorer">☰</button>
-      <div class="lights" aria-hidden="true"><i class="r"></i><i class="y"></i><i class="g"></i></div>
-      <span class="title">harsh@dev: <b>~/portfolio</b> — zsh</span>
-      <button class="cmdk" id="cmdk-btn">press <b>⌘K</b> for commands</button>
-    </div>
-
-    <div class="body">
-
-      <!-- Sidebar / file tree -->
-      <aside class="sidebar" id="sidebar">
-        <div class="side-h">EXPLORER</div>
-        <nav class="tree" id="tree" aria-label="Sections">
-          <div class="folder"><span class="caret">▾</span> <span style="color:var(--orange)">harsh-shah/</span></div>
-          <button class="file" data-file="about"><span class="dot" style="background:var(--blue)"></span>about.md</button>
-          <button class="file" data-file="skills"><span class="dot" style="background:var(--yellow)"></span>skills.json</button>
-          <button class="file" data-file="experience"><span class="dot" style="background:var(--green)"></span>experience.log</button>
-          <button class="file" data-file="education"><span class="dot" style="background:var(--blue)"></span>education.md</button>
-          <button class="file" data-file="projects"><span class="dot" style="background:var(--orange)"></span>projects/</button>
-          <button class="file" data-file="publications"><span class="dot" style="background:var(--purple)"></span>publications.bib</button>
-          <button class="file" data-file="contact"><span class="dot" style="background:var(--aqua)"></span>contact.sh</button>
-        </nav>
-        <div class="side-foot">
-          <a href="https://github.com/Harsh-Shah012001" target="_blank" rel="noopener">github</a>
-          <a href="https://www.linkedin.com/in/harshshah012001" target="_blank" rel="noopener">linkedin</a>
-        </div>
-      </aside>
-      <div class="scrim" id="scrim" aria-hidden="true"></div>
-
-      <!-- Main editor -->
-      <main class="main">
-
-        <!-- Tabs -->
-        <div class="tabs" id="tabs" role="tablist">
-          <button class="tab" data-file="about" role="tab"><span class="dot" style="color:var(--blue)">●</span> about.md</button>
-          <button class="tab" data-file="skills" role="tab"><span class="dot" style="color:var(--yellow)">●</span> skills.json</button>
-          <button class="tab" data-file="experience" role="tab"><span class="dot" style="color:var(--green)">●</span> experience.log</button>
-          <button class="tab" data-file="education" role="tab"><span class="dot" style="color:var(--blue)">●</span> education.md</button>
-          <button class="tab" data-file="projects" role="tab"><span class="dot" style="color:var(--orange)">●</span> projects/</button>
-          <button class="tab" data-file="publications" role="tab"><span class="dot" style="color:var(--purple)">●</span> publications.bib</button>
-          <button class="tab" data-file="contact" role="tab"><span class="dot" style="color:var(--aqua)">●</span> contact.sh</button>
-        </div>
-
-        <!-- Editor body -->
-        <div class="editor" id="editor">
-
-          <!-- about.md -->
-          <section class="panel" data-file="about" role="tabpanel" aria-label="about.md">
-            <div class="filecode">
-              <div class="cl"><span class="t-comment">// welcome — run `help` in the terminal below, or press ⌘K</span></div>
-              <div class="cl">&nbsp;</div>
-              <div class="cl"><span class="t-h1"># Harsh Shah</span></div>
-              <div class="cl"><span class="t-quote">&gt; full-stack software engineer &amp; ML enthusiast</span></div>
-              <div class="cl">&nbsp;</div>
-              <div class="cl">I'm a software engineer with an MS in Computer Science from</div>
-              <div class="cl">Northeastern University. I build intelligent, reliable software —</div>
-              <div class="cl">from AI/RAG platforms and data pipelines to production web apps —</div>
-              <div class="cl">and I'm drawn to problems that are hard enough to be interesting.</div>
-              <div class="cl">&nbsp;</div>
-              <div class="cl"><span class="t-h2">## quick facts</span></div>
-              <div class="cl"><span class="t-bullet">-</span> based     <span class="t-punc">→</span> New York City, NY · USA</div>
-              <div class="cl"><span class="t-bullet">-</span> education <span class="t-punc">→</span> MS Computer Science @ Northeastern <span class="t-punc">(</span>GPA 3.9<span class="t-punc">)</span></div>
-              <div class="cl"><span class="t-bullet">-</span> focus     <span class="t-punc">→</span> full-stack engineering · applied ML</div>
-              <div class="cl"><span class="t-bullet">-</span> role      <span class="t-punc">→</span> <span class="t-str">Associate Software Engineer @ Atlas SP</span></div>
-              <div class="cl">&nbsp;</div>
-              <div class="cl"><span class="t-h2">## motto</span></div>
-              <div class="cl"><span class="t-quote">&gt; "Always believe something wonderful is about to happen."</span></div>
-              <div class="cl">&nbsp;</div>
-              <div class="cl">
-                <div class="btnrow">
-                  <button class="btn primary" data-action="open" data-arg="projects">▸ ls ~/projects</button>
-                  <a class="btn" href="Resume_Harsh_Shah.pdf" download>cat resume.pdf</a>
-                  <button class="btn" data-action="open" data-arg="contact">./contact.sh</button>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- skills.json -->
-          <section class="panel" data-file="skills" role="tabpanel" aria-label="skills.json">
-            <div class="filecode">
-              <div class="cl"><span class="t-punc">{</span></div>
-              <div class="cl">  <span class="t-prop">"languages"</span><span class="t-punc">:</span>   <span class="t-punc">[</span><span class="t-str">"Python"</span>, <span class="t-str">"Java"</span>, <span class="t-str">"C++"</span>, <span class="t-str">"C#"</span>, <span class="t-str">"R"</span>, <span class="t-str">"JavaScript"</span><span class="t-punc">]</span>,</div>
-              <div class="cl">  <span class="t-prop">"web"</span><span class="t-punc">:</span>         <span class="t-punc">[</span><span class="t-str">"HTML"</span>, <span class="t-str">"CSS"</span>, <span class="t-str">"React"</span>, <span class="t-str">"Node.js"</span>, <span class="t-str">".NET"</span>, <span class="t-str">"Blazor"</span><span class="t-punc">]</span>,</div>
-              <div class="cl">  <span class="t-prop">"databases"</span><span class="t-punc">:</span>   <span class="t-punc">[</span><span class="t-str">"MySQL"</span>, <span class="t-str">"SQL Server"</span>, <span class="t-str">"MongoDB"</span>, <span class="t-str">"PostgreSQL"</span>, <span class="t-str">"DynamoDB"</span>, <span class="t-str">"Snowflake"</span>, <span class="t-str">"Pinecone"</span><span class="t-punc">]</span>,</div>
-              <div class="cl">  <span class="t-prop">"ml_and_data"</span><span class="t-punc">:</span> <span class="t-punc">[</span><span class="t-str">"TensorFlow"</span>, <span class="t-str">"PyTorch"</span>, <span class="t-str">"Keras"</span>, <span class="t-str">"Scikit-learn"</span>, <span class="t-str">"NLTK"</span>, <span class="t-str">"LangChain"</span>, <span class="t-str">"MLflow"</span>, <span class="t-str">"Apache Airflow"</span><span class="t-punc">]</span>,</div>
-              <div class="cl">  <span class="t-prop">"cloud_ops"</span><span class="t-punc">:</span>   <span class="t-punc">[</span><span class="t-str">"Azure"</span>, <span class="t-str">"Docker"</span>, <span class="t-str">"Kubernetes"</span>, <span class="t-str">"Git"</span>, <span class="t-str">"CI/CD"</span>, <span class="t-str">"Jenkins"</span>, <span class="t-str">"Prometheus"</span>, <span class="t-str">"Grafana"</span>, <span class="t-str">"AWS S3"</span><span class="t-punc">]</span></div>
-              <div class="cl"><span class="t-punc">}</span></div>
-              <div class="cl">&nbsp;</div>
-              <div class="cl"><span class="t-comment">// always learning — currently going deeper on distributed systems, RAG &amp; LLM tooling</span></div>
-            </div>
-          </section>
-
-          <!-- experience.log -->
-          <section class="panel" data-file="experience" role="tabpanel" aria-label="experience.log">
-            <div class="filecode">
-              <div class="cl"><span class="t-comment"># tail -f experience.log</span></div>
-              <div class="cl">&nbsp;</div>
-              <div class="cl"><span class="t-date">[2026-02 → present]</span> <span class="t-lvl">INFO</span>  Atlas SP Partners · New York City</div>
-              <div class="cl">   <span class="t-prop">role</span>: Associate Software Engineer</div>
-              <div class="cl">   <span class="t-bullet">▸</span> Full-stack apps, automation &amp; centralized storage for the Residential Mortgage + Commercial Real Estate divisions</div>
-              <div class="cl">   <span class="t-bullet">▸</span> Architected a distributed AI document-intelligence platform (Python, React, Docker, LangChain, Azure Service Bus)</div>
-              <div class="cl">   <span class="t-bullet">▸</span> Built a scalable RAG pipeline with vector embeddings + a vector DB — semantic retrieval over 100+ docs/day across asset classes</div>
-              <div class="cl">   <span class="t-bullet">▸</span> Shipped a CRE facility-onboarding platform (React + Python) automating facilities, covenants, tranches &amp; funding pools — replacing Excel</div>
-              <div class="cl">&nbsp;</div>
-              <div class="cl"><span class="t-date">[2025-01 → 2025-08]</span> <span class="t-lvl">INFO</span>  Atlas SP Partners · New York City</div>
-              <div class="cl">   <span class="t-prop">role</span>: Software Engineer Intern</div>
-              <div class="cl">   <span class="t-bullet">▸</span> Full-stack daily margin-call platform (.NET, React, Python, REST APIs) on Azure microservices — saved 3–5 hrs/day</div>
-              <div class="cl">   <span class="t-bullet">▸</span> Config-driven ingestion pipeline into Snowflake (3+ asset classes) — cut Excel dependency by 70%</div>
-              <div class="cl">   <span class="t-bullet">▸</span> Orchestrated daily jobs in Control-M Helix; automated Resi Due Diligence via PyXLL (–15–20 hrs/deal)</div>
-              <div class="cl">   <span class="t-bullet">▸</span> Email-monitoring Python package on the Microsoft Graph API</div>
-              <div class="cl">&nbsp;</div>
-              <div class="cl"><span class="t-date">[2024-05 → 2025-12]</span> <span class="t-lvl">INFO</span>  Northeastern University · Boston, MA</div>
-              <div class="cl">   <span class="t-prop">role</span>: Teaching Assistant</div>
-              <div class="cl">   <span class="t-bullet">▸</span> TA for CS 5800 (Algorithms · Fall '25) &amp; CS 3000 (Algorithms &amp; Data · '24)</div>
-              <div class="cl">   <span class="t-bullet">▸</span> Grading, leading discussions, and office hours to deepen understanding</div>
-              <div class="cl">&nbsp;</div>
-              <div class="cl"><span class="t-date">[2022-04 → 2023-04]</span> <span class="t-lvl">INFO</span>  Knorr-Bremse Technology Center · Pune, India</div>
-              <div class="cl">   <span class="t-prop">role</span>: Software Engineer Intern</div>
-              <div class="cl">   <span class="t-bullet">▸</span> Automated MS SQL updates in Python — +70% efficiency &amp; accuracy in data management</div>
-              <div class="cl">   <span class="t-bullet">▸</span> Designed a SQL Server schema powering Software-Engineering KPI metrics (Agile)</div>
-              <div class="cl">   <span class="t-bullet">▸</span> Built Grafana dashboards for live KPI visualization; hardened Jenkins CI/CD</div>
-              <div class="cl">&nbsp;</div>
-              <div class="cl"><span class="t-date">[2021-09 → 2022-12]</span> <span class="t-lvl warn">DATA</span>  ShapeAI · Pune, India</div>
-              <div class="cl">   <span class="t-prop">role</span>: Data Science Intern</div>
-              <div class="cl">   <span class="t-bullet">▸</span> 96% accuracy in heart-disease detection with a multi-kernel SVM (tuning + optimization)</div>
-              <div class="cl">   <span class="t-bullet">▸</span> scikit-learn + matplotlib for symptom analysis and trend visualization</div>
-            </div>
-          </section>
-
-          <!-- education.md -->
-          <section class="panel" data-file="education" role="tabpanel" aria-label="education.md">
-            <div class="filecode">
-              <div class="cl"><span class="t-h1"># education</span></div>
-              <div class="cl">&nbsp;</div>
-              <div class="cl"><span class="t-h2">## M.S. Computer Science</span></div>
-              <div class="cl">Northeastern University · Boston, MA <span class="t-date">[ Jan 2024 – Dec 2025 ]</span></div>
-              <div class="cl"><span class="t-prop">gpa</span>: <span class="t-num">3.9</span> / 4.0</div>
-              <div class="cl"><span class="t-prop">coursework</span>: Programming Design Paradigm, Foundations of AI, Algorithms,</div>
-              <div class="cl">            Machine Learning, ML Operations (MLOps), Natural Language Processing,</div>
-              <div class="cl">            Database Management Systems, Web Technology</div>
-              <div class="cl">&nbsp;</div>
-              <div class="cl"><span class="t-h2">## B.E. Computer Engineering</span></div>
-              <div class="cl">Savitribai Phule Pune University · Pune, India <span class="t-date">[ 2019 – 2023 ]</span></div>
-              <div class="cl"><span class="t-prop">gpa</span>: <span class="t-num">9.1</span> / 10.0</div>
-              <div class="cl"><span class="t-prop">coursework</span>: ML, DSA, DBMS, Web Dev, OOP, Cloud Computing, Blockchain,</div>
-              <div class="cl">            Object-Oriented Design, Big Data Analytics, Distributed Systems</div>
-            </div>
-          </section>
-
-          <!-- projects/ -->
-          <section class="panel" data-file="projects" role="tabpanel" aria-label="projects">
-            <div class="dirview">
-              <div class="dir-cmd"><span class="prompt">harsh@dev</span>:<span style="color:var(--blue)">~</span>$ ls -la ~/projects &nbsp;<span class="t-comment"># 7 repositories</span></div>
-              <div class="proj-grid">
-
-                <article class="proj">
-                  <div class="proj-head"><span class="perm">drwxr-xr-x</span> <span class="name">bluebikes-demand-mlops/</span> <span class="star">★</span></div>
-                  <div class="proj-body">
-                    <p>End-to-end MLOps pipeline for hourly bike-demand prediction using 40+ features — R² &gt; 0.85 with XGBoost/LightGBM/Random Forest, tracked in MLflow. CI/CD deployment with drift &amp; bias monitoring (Evidently AI) and Slack alerting; cut runtime by 70%.</p>
-                    <div class="proj-tags"><span>MLOps</span><span>Airflow</span><span>Docker</span><span>XGBoost</span><span>MLflow</span></div>
-                    <a class="proj-link" href="https://github.com/PranavViswanathan/Rebalance-AI" target="_blank" rel="noopener">cd → github ↗</a>
-                  </div>
-                </article>
-
-                <article class="proj">
-                  <div class="proj-head"><span class="perm">drwxr-xr-x</span> <span class="name">text-translation/</span> <span class="star">★</span></div>
-                  <div class="proj-body">
-                    <p>French→English translation with a from-scratch Transformer + LSTM (no pretrained libs) — 91% accuracy using core NLP techniques.</p>
-                    <div class="proj-tags"><span>Transformer</span><span>LSTM</span><span>Python</span><span>NLP</span></div>
-                    <a class="proj-link" href="https://github.com/Harsh-Shah012001/Text-Translation" target="_blank" rel="noopener">cd → github ↗</a>
-                  </div>
-                </article>
-
-                <article class="proj">
-                  <div class="proj-head"><span class="perm">drwxr-xr-x</span> <span class="name">forgery-detection/</span> <span class="star">★</span></div>
-                  <div class="proj-body">
-                    <p>Image manipulation &amp; forgery detection with ResNet + UNet segmentation — 93% accuracy on the CASIA dataset. Led the team.</p>
-                    <div class="proj-tags"><span>ResNet</span><span>UNet</span><span>CNN</span><span>Python</span></div>
-                    <a class="proj-link" href="https://github.com/Harsh-Shah012001/Image_Manipulation_Detection_Streamlit_SegematationModel" target="_blank" rel="noopener">cd → github ↗</a>
-                  </div>
-                </article>
-
-                <article class="proj">
-                  <div class="proj-head"><span class="perm">drwxr-xr-x</span> <span class="name">heart-disease/</span></div>
-                  <div class="proj-body">
-                    <p>SVM heart-disease predictor with Selenium-scraped data; an RBF-kernel classifier gave the best performance on the set.</p>
-                    <div class="proj-tags"><span>SVM</span><span>Web Scraping</span><span>Data Viz</span><span>Python</span></div>
-                    <a class="proj-link" href="https://github.com/Harsh-Shah012001/Heart-Disease-Detection" target="_blank" rel="noopener">cd → github ↗</a>
-                  </div>
-                </article>
-
-                <article class="proj">
-                  <div class="proj-head"><span class="perm">drwxr-xr-x</span> <span class="name">drowsiness-detection/</span></div>
-                  <div class="proj-body">
-                    <p>Real-time driver-drowsiness detection with CNNs + OpenCV at 90% accuracy, with an alarm to alert drivers to pull over.</p>
-                    <div class="proj-tags"><span>OpenCV</span><span>TensorFlow</span><span>CNN</span><span>Python</span></div>
-                    <a class="proj-link" href="https://github.com/Harsh-Shah012001/DRIVER_DROWSINESS_CNN_TNESORFLOW" target="_blank" rel="noopener">cd → github ↗</a>
-                  </div>
-                </article>
-
-                <article class="proj">
-                  <div class="proj-head"><span class="perm">drwxr-xr-x</span> <span class="name">knn-model/</span></div>
-                  <div class="proj-body">
-                    <p>A clean implementation of K-Nearest Neighbours — a "lazy learner" classifying by similarity, handling non-linear data for both classification &amp; regression.</p>
-                    <div class="proj-tags"><span>Supervised ML</span><span>Data Analysis</span><span>Python</span></div>
-                    <a class="proj-link" href="https://github.com/Harsh-Shah012001/KNN-Model" target="_blank" rel="noopener">cd → github ↗</a>
-                  </div>
-                </article>
-
-                <article class="proj">
-                  <div class="proj-head"><span class="perm">drwxr-xr-x</span> <span class="name">customer-segmentation/</span></div>
-                  <div class="proj-body">
-                    <p>K-Means clustering to segment mall customers by income &amp; spend — surfacing distinct customer types for targeted marketing.</p>
-                    <div class="proj-tags"><span>K-Means</span><span>Unsupervised ML</span><span>Python</span></div>
-                    <a class="proj-link" href="https://github.com/Harsh-Shah012001/K-Means-Clustering" target="_blank" rel="noopener">cd → github ↗</a>
-                  </div>
-                </article>
-
-              </div>
-              <div class="btnrow" style="margin-top:20px">
-                <a class="btn" href="https://github.com/Harsh-Shah012001" target="_blank" rel="noopener">▸ git remote -v → github.com/Harsh-Shah012001 ↗</a>
-              </div>
-            </div>
-          </section>
-
-          <!-- publications.bib -->
-          <section class="panel" data-file="publications" role="tabpanel" aria-label="publications.bib">
-            <div class="filecode">
-              <div class="cl"><span class="t-comment">% publications.bib — 2 entries</span></div>
-              <div class="cl">&nbsp;</div>
-              <div class="cl"><span class="t-key">@article</span><span class="t-punc">{</span><span class="t-fn">shah2023gan</span>,</div>
-              <div class="cl">  <span class="t-prop">title</span>   = <span class="t-punc">{</span><span class="t-str">Exploring the Potential of Generative Adversarial Networks: A Comparative Study of GAN</span><span class="t-punc">}</span>,</div>
-              <div class="cl">  <span class="t-prop">author</span>  = <span class="t-punc">{</span><span class="t-str">Shah, Harsh</span><span class="t-punc">}</span>,</div>
-              <div class="cl">  <span class="t-prop">journal</span> = <span class="t-punc">{</span><span class="t-str">IRJET</span><span class="t-punc">}</span>,</div>
-              <div class="cl">  <span class="t-prop">year</span>    = <span class="t-punc">{</span><span class="t-num">2023</span><span class="t-punc">}</span>,</div>
-              <div class="cl">  <span class="t-prop">url</span>     = <span class="t-punc">{</span><a class="t-link" href="https://www.irjet.net/archives/V10/i5/IRJET-V10I5206.pdf" target="_blank" rel="noopener">https://irjet.net/archives/V10/i5/IRJET-V10I5206.pdf</a><span class="t-punc">}</span></div>
-              <div class="cl"><span class="t-punc">}</span> &nbsp; <a class="t-link" href="https://www.irjet.net/archives/V10/i5/IRJET-V10I5206.pdf" target="_blank" rel="noopener">↗ read</a></div>
-              <div class="cl">&nbsp;</div>
-              <div class="cl"><span class="t-key">@article</span><span class="t-punc">{</span><span class="t-fn">shah2023uav</span>,</div>
-              <div class="cl">  <span class="t-prop">title</span>   = <span class="t-punc">{</span><span class="t-str">Autonomous UAV Swarms: Powering Up with AI</span><span class="t-punc">}</span>,</div>
-              <div class="cl">  <span class="t-prop">author</span>  = <span class="t-punc">{</span><span class="t-str">Shah, Harsh</span><span class="t-punc">}</span>,</div>
-              <div class="cl">  <span class="t-prop">journal</span> = <span class="t-punc">{</span><span class="t-str">IJRASET</span><span class="t-punc">}</span>,</div>
-              <div class="cl">  <span class="t-prop">year</span>    = <span class="t-punc">{</span><span class="t-num">2023</span><span class="t-punc">}</span>,</div>
-              <div class="cl">  <span class="t-prop">url</span>     = <span class="t-punc">{</span><a class="t-link" href="https://www.ijraset.com/research-paper/autonomous-uav-swarms-powering-up-with-ai" target="_blank" rel="noopener">https://ijraset.com/research-paper/autonomous-uav-swarms-powering-up-with-ai</a><span class="t-punc">}</span></div>
-              <div class="cl"><span class="t-punc">}</span> &nbsp; <a class="t-link" href="https://www.ijraset.com/research-paper/autonomous-uav-swarms-powering-up-with-ai" target="_blank" rel="noopener">↗ read</a></div>
-            </div>
-          </section>
-
-          <!-- contact.sh -->
-          <section class="panel" data-file="contact" role="tabpanel" aria-label="contact.sh">
-            <div class="filecode">
-              <div class="cl"><span class="t-comment">#!/bin/bash</span></div>
-              <div class="cl"><span class="t-comment"># reach out — I usually reply within a day</span></div>
-              <div class="cl">&nbsp;</div>
-              <div class="cl"><span class="t-prop">NAME</span>=<span class="t-str">"Harsh Shah"</span></div>
-              <div class="cl"><span class="t-prop">EMAIL</span>=<span class="t-str">"hshah012001@gmail.com"</span></div>
-              <div class="cl"><span class="t-prop">PHONE</span>=<span class="t-str">"+1 (781) 824-2688"</span></div>
-              <div class="cl"><span class="t-prop">LOCATION</span>=<span class="t-str">"New York City, NY · USA"</span></div>
-              <div class="cl"><span class="t-prop">STATUS</span>=<span class="t-str">"open to interesting problems &amp; connections"</span></div>
-              <div class="cl">&nbsp;</div>
-              <div class="cl"><span class="t-fn">echo</span> <span class="t-str">"Let's build something together."</span></div>
-              <div class="cl">&nbsp;</div>
-              <div class="cl">
-                <div class="btnrow">
-                  <a class="btn primary" href="mailto:hshah012001@gmail.com">✉ email me</a>
-                  <a class="btn" href="Resume_Harsh_Shah.pdf" download>⤓ résumé.pdf</a>
-                  <a class="btn" href="https://github.com/Harsh-Shah012001" target="_blank" rel="noopener">↗ github</a>
-                  <a class="btn" href="https://www.linkedin.com/in/harshshah012001" target="_blank" rel="noopener">↗ linkedin</a>
-                </div>
-              </div>
-            </div>
-          </section>
-
-        </div>
-
-        <!-- Terminal -->
-        <div class="term">
-          <div class="term-head">
-            <span class="tdot"></span> TERMINAL
-            <button class="clr" id="term-clear">clear</button>
-          </div>
-          <div class="term-out" id="term-out" aria-live="polite"></div>
-          <form class="term-in" id="term-form" autocomplete="off">
-            <span class="prompt">harsh@dev<span class="sig">:</span><span class="path">~</span><span class="sig">$</span></span>
-            <input id="term-input" type="text" aria-label="Terminal command" spellcheck="false">
-          </form>
-        </div>
-
-        <!-- Status bar -->
-        <div class="status">
-          <span class="seg">⎇ main<span style="opacity:.6">*</span></span>
-          <span class="seg hide-sm">UTF-8</span>
-          <span class="seg" id="status-lang">Markdown</span>
-          <span class="sp seg hide-sm" id="status-pos">Ln 1, Col 1</span>
-          <span class="seg">♥ built by Harsh</span>
-        </div>
-
-      </main>
-    </div>
-  </div>
-
-  <!-- Command palette -->
-  <div class="palette-wrap" id="palette-wrap" role="dialog" aria-modal="true" aria-label="Command palette">
-    <div class="palette">
-      <div class="palette-in">
-        <span class="prompt">&gt;</span>
-        <input id="palette-input" type="text" placeholder="Type a command or search…" spellcheck="false">
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="container nav-in">
+      <a href="#top" class="brand"><span class="dot"></span> Harsh Shah</a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
-      <div class="palette-list" id="palette-list"></div>
+      <div class="nav-right">
+        <a class="btn btn-primary" href="Resume_Harsh_Shah.pdf" download>Resume ↓</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
     </div>
-  </div>
+  </nav>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <header class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <h1>Software engineer building <span class="grad">intelligent</span> products.</h1>
+          <p class="hero-motto">"Always believe something wonderful is about to happen."</p>
+          <p class="hero-role">Full-stack engineer &amp; ML enthusiast</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">View my work →</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/Harsh-Shah012001" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.5 5.7.5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5Z"/></svg></a>
+            <a href="https://www.linkedin.com/in/harshshah012001" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33 0-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.74v20.51C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.74C24 .78 23.2 0 22.22 0Z"/></svg></a>
+            <a href="mailto:hshah012001@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M2 4h20c.55 0 1 .45 1 1v14c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1Zm10 7L3 6v1l9 5 9-5V6l-9 5Z"/></svg></a>
+          </div>
+        </div>
+        <div class="portrait-wrap reveal">
+          <div class="portrait-bg"></div>
+          <img class="portrait" src="assets/img/my-profile-img.jpg" alt="Harsh Shah" loading="eager">
+          <div class="badge"><b>MS · CS</b>Northeastern '25</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">About</p>
+          <h2>A bit about me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-body reveal">
+            <p>I'm a software engineer with an <strong>MS in Computer Science from Northeastern University</strong>. I build intelligent, reliable software — from AI/RAG platforms and data pipelines to production web apps — and I'm drawn to problems that are hard enough to be genuinely interesting.</p>
+            <p>Right now I'm an <strong>Associate Software Engineer at Atlas SP Partners</strong> in New York, where I've architected a distributed AI document-intelligence platform and shipped full-stack tools that replace manual workflows. I care about clean systems, measurable impact, and continuous learning.</p>
+          </div>
+          <div class="facts reveal">
+            <div class="fact">
+              <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+              <div><span class="k">Based in</span><span class="v">New York City, NY · USA</span></div>
+            </div>
+            <div class="fact">
+              <span class="ic"><svg viewBox="0 0 24 24"><path d="M3 9l9-5 9 5-9 5-9-5Z"/><path d="M7 11.5V16c0 1 2.2 2.5 5 2.5s5-1.5 5-2.5v-4.5"/></svg></span>
+              <div><span class="k">Education</span><span class="v">MS Computer Science · GPA 3.9</span></div>
+            </div>
+            <div class="fact">
+              <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg></span>
+              <div><span class="k">Email</span><a class="v" href="mailto:hshah012001@gmail.com">hshah012001@gmail.com</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Where I've worked</h2>
+        </div>
+        <div class="xp-list">
+
+          <article class="xp reveal">
+            <div class="when">Feb 2026 — Present</div>
+            <div>
+              <h3>Associate Software Engineer</h3>
+              <div class="org">Atlas SP Partners · New York City</div>
+              <ul>
+                <li>Build full-stack apps, automation &amp; centralized storage for the Residential Mortgage and Commercial Real Estate divisions of Securitized Products.</li>
+                <li>Architected a distributed AI document-intelligence platform (Python, React, Docker, LangChain, Azure Service Bus).</li>
+                <li>Built a scalable RAG pipeline with vector embeddings + a vector database — semantic retrieval over 100+ documents/day across asset classes.</li>
+                <li>Shipped a CRE facility-onboarding platform (React + Python) automating facilities, covenants, tranches &amp; funding pools — replacing Excel workflows.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="xp reveal">
+            <div class="when">Jan 2025 — Aug 2025</div>
+            <div>
+              <h3>Software Engineer Intern</h3>
+              <div class="org">Atlas SP Partners · New York City</div>
+              <ul>
+                <li>Built a full-stack daily margin-call platform (.NET, React, Python, REST APIs) on Azure microservices — saved 3–5 hours/day.</li>
+                <li>Created a config-driven ingestion pipeline into Snowflake (3+ asset classes) — cut Excel dependency by 70%.</li>
+                <li>Orchestrated daily jobs in Control-M Helix; automated Resi Due Diligence via PyXLL (–15–20 hrs/deal).</li>
+                <li>Wrote an email-monitoring Python package on the Microsoft Graph API.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="xp reveal">
+            <div class="when">May 2024 — Dec 2025</div>
+            <div>
+              <h3>Teaching Assistant</h3>
+              <div class="org">Northeastern University · Boston, MA</div>
+              <ul>
+                <li>TA for CS 5800 (Algorithms · Fall '25) and CS 3000 (Algorithms &amp; Data · '24).</li>
+                <li>Supported students through grading, leading discussions, and office hours to deepen conceptual understanding.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="xp reveal">
+            <div class="when">Apr 2022 — Apr 2023</div>
+            <div>
+              <h3>Software Engineer Intern</h3>
+              <div class="org">Knorr-Bremse Technology Center · Pune, India</div>
+              <ul>
+                <li>Automated MS SQL database management in Python — improved data-management efficiency &amp; accuracy by 70%.</li>
+                <li>Designed and maintained a SQL Server schema powering Software-Engineering KPI metrics (Agile).</li>
+                <li>Built Grafana dashboards for live KPI visualization; hardened Jenkins CI/CD pipelines.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="xp reveal">
+            <div class="when">Sep 2021 — Dec 2022</div>
+            <div>
+              <h3>Data Science Intern</h3>
+              <div class="org">ShapeAI · Pune, India</div>
+              <ul>
+                <li>Achieved 96% accuracy in heart-disease detection with a multi-kernel SVM (tuning + optimization).</li>
+                <li>Used scikit-learn and matplotlib for symptom analysis and trend visualization.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Education</p>
+          <h2>Academic background</h2>
+        </div>
+        <div class="edu-grid">
+          <div class="edu reveal">
+            <div class="top"><h3>M.S. Computer Science</h3><span class="when">Jan 2024 — Dec 2025</span></div>
+            <div class="org">Northeastern University · Boston, MA</div>
+            <span class="gpa">GPA 3.9 / 4.0</span>
+            <p class="courses"><b>Coursework:</b> Programming Design Paradigm, Foundations of AI, Algorithms, Machine Learning, ML Operations (MLOps), Natural Language Processing, Database Management Systems, Web Technology.</p>
+          </div>
+          <div class="edu reveal">
+            <div class="top"><h3>B.E. Computer Engineering</h3><span class="when">Jun 2019 — Jun 2023</span></div>
+            <div class="org">Savitribai Phule Pune University · Pune, India</div>
+            <span class="gpa">GPA 9.1 / 10.0</span>
+            <p class="courses"><b>Coursework:</b> Machine Learning, DSA, DBMS, Web Development, OOP, Cloud Computing, Blockchain, Object-Oriented Design, Big Data Analytics, Distributed Systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Toolbox</p>
+          <h2>Skills &amp; technologies</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill reveal">
+            <h4>Languages</h4>
+            <div class="chips"><span>Python</span><span>Java</span><span>C++</span><span>C#</span><span>R</span><span>JavaScript</span></div>
+          </div>
+          <div class="skill reveal">
+            <h4>Web &amp; Frameworks</h4>
+            <div class="chips"><span>React</span><span>Node.js</span><span>.NET</span><span>Blazor</span><span>HTML</span><span>CSS</span></div>
+          </div>
+          <div class="skill reveal">
+            <h4>ML &amp; Data</h4>
+            <div class="chips"><span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span><span>NLTK</span><span>LangChain</span><span>MLflow</span><span>Apache Airflow</span></div>
+          </div>
+          <div class="skill reveal">
+            <h4>Databases</h4>
+            <div class="chips"><span>MySQL</span><span>SQL Server</span><span>PostgreSQL</span><span>MongoDB</span><span>DynamoDB</span><span>Snowflake</span><span>Pinecone</span></div>
+          </div>
+          <div class="skill reveal">
+            <h4>Cloud &amp; DevOps</h4>
+            <div class="chips"><span>Azure</span><span>Docker</span><span>Kubernetes</span><span>Git</span><span>CI/CD</span><span>Jenkins</span><span>Prometheus</span><span>Grafana</span><span>AWS S3</span></div>
+          </div>
+          <div class="skill reveal">
+            <h4>Always learning</h4>
+            <div class="chips"><span>Distributed systems</span><span>RAG &amp; LLM tooling</span><span>Cloud-native</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2>Things I've built</h2>
+        </div>
+        <div class="cards">
+
+          <a class="card reveal" href="https://github.com/PranavViswanathan/Rebalance-AI" target="_blank" rel="noopener">
+            <div class="k"><div class="ic">OPS</div><span class="arrow">↗</span></div>
+            <h3>Bluebikes Demand Prediction</h3>
+            <p>End-to-end MLOps pipeline for hourly bike-demand forecasting — R² &gt; 0.85 with XGBoost/LightGBM, tracked in MLflow, with drift monitoring &amp; CI/CD.</p>
+            <div class="tags"><span>MLOps</span><span>Airflow</span><span>XGBoost</span></div>
+          </a>
+
+          <a class="card reveal" href="https://github.com/Harsh-Shah012001/Text-Translation" target="_blank" rel="noopener">
+            <div class="k"><div class="ic">NLP</div><span class="arrow">↗</span></div>
+            <h3>Text Translation</h3>
+            <p>French→English translation with a from-scratch Transformer + LSTM (no pretrained libraries), reaching 91% accuracy.</p>
+            <div class="tags"><span>Transformer</span><span>PyTorch</span><span>NLP</span></div>
+          </a>
+
+          <a class="card reveal" href="https://github.com/Harsh-Shah012001/Image_Manipulation_Detection_Streamlit_SegematationModel" target="_blank" rel="noopener">
+            <div class="k"><div class="ic">CV</div><span class="arrow">↗</span></div>
+            <h3>Forgery Detection</h3>
+            <p>Image manipulation &amp; forgery detection with ResNet + UNet segmentation — 93% accuracy on the CASIA dataset. Led the team.</p>
+            <div class="tags"><span>ResNet</span><span>UNet</span><span>CNN</span></div>
+          </a>
+
+          <a class="card reveal" href="https://github.com/Harsh-Shah012001/Heart-Disease-Detection" target="_blank" rel="noopener">
+            <div class="k"><div class="ic">ML</div><span class="arrow">↗</span></div>
+            <h3>Heart Disease Prediction</h3>
+            <p>SVM predictor with Selenium-scraped data; an RBF-kernel classifier gave the best performance on the dataset.</p>
+            <div class="tags"><span>SVM</span><span>Web Scraping</span><span>Python</span></div>
+          </a>
+
+          <a class="card reveal" href="https://github.com/Harsh-Shah012001/DRIVER_DROWSINESS_CNN_TNESORFLOW" target="_blank" rel="noopener">
+            <div class="k"><div class="ic">CV</div><span class="arrow">↗</span></div>
+            <h3>Driver Drowsiness Detection</h3>
+            <p>Real-time drowsiness detection with CNNs + OpenCV at 90% accuracy, with an alarm to alert drivers to pull over.</p>
+            <div class="tags"><span>OpenCV</span><span>TensorFlow</span><span>CNN</span></div>
+          </a>
+
+          <a class="card reveal" href="https://github.com/Harsh-Shah012001/K-Means-Clustering" target="_blank" rel="noopener">
+            <div class="k"><div class="ic">ML</div><span class="arrow">↗</span></div>
+            <h3>Customer Segmentation</h3>
+            <p>K-Means clustering to segment mall customers by income &amp; spend — surfacing distinct customer types for targeted marketing.</p>
+            <div class="tags"><span>K-Means</span><span>Unsupervised</span><span>Python</span></div>
+          </a>
+
+        </div>
+        <div class="more reveal">
+          <a class="btn btn-ghost" href="https://github.com/Harsh-Shah012001" target="_blank" rel="noopener">See more on GitHub →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Research</p>
+          <h2>Publications</h2>
+        </div>
+        <div class="pub-grid">
+          <article class="pub reveal">
+            <span class="tag">Research Paper · IRJET</span>
+            <h3><a href="https://www.irjet.net/archives/V10/i5/IRJET-V10I5206.pdf" target="_blank" rel="noopener">Exploring the Potential of Generative Adversarial Networks: A Comparative Study of GAN</a></h3>
+            <p>A study of GANs and their ability to generate realistic data — covering vanilla GANs, MedGANs, StyleGANs, and CycleGANs, their architectures, applications in text-to-image synthesis, and challenges like mode collapse and instability.</p>
+            <a class="read" href="https://www.irjet.net/archives/V10/i5/IRJET-V10I5206.pdf" target="_blank" rel="noopener">Read publication ↗</a>
+          </article>
+          <article class="pub reveal">
+            <span class="tag">Research Paper · IJRASET</span>
+            <h3><a href="https://www.ijraset.com/research-paper/autonomous-uav-swarms-powering-up-with-ai" target="_blank" rel="noopener">Autonomous UAV Swarms: Powering Up with AI</a></h3>
+            <p>An analysis of autonomous UAV swarming — its benefits, core technologies, and future prospects; decentralized coordination, reinforcement learning &amp; particle swarm optimization, and applications across inspection, search &amp; rescue, and disaster response.</p>
+            <a class="read" href="https://www.ijraset.com/research-paper/autonomous-uav-swarms-powering-up-with-ai" target="_blank" rel="noopener">Read publication ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's build something</h2>
+          <p>I'm always happy to talk about interesting problems, collaborations, or opportunities. The fastest way to reach me is email.</p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:hshah012001@gmail.com">✉ hshah012001@gmail.com</a>
+            <a class="btn btn-ghost" href="Resume_Harsh_Shah.pdf" download>Download Resume ↓</a>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/Harsh-Shah012001" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.5 5.7.5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5Z"/></svg></a>
+            <a href="https://www.linkedin.com/in/harshshah012001" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33 0-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.74v20.51C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.74C24 .78 23.2 0 22.22 0Z"/></svg></a>
+            <a href="mailto:hshah012001@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M2 4h20c.55 0 1 .45 1 1v14c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1Zm10 7L3 6v1l9 5 9-5V6l-9 5Z"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-in">
+      <span>© <span id="year"></span> Harsh Shah</span>
+    </div>
+  </footer>
 
   <script src="assets/js/main.js"></script>
 </body>
