@@ -4,598 +4,342 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Welcome to my Portfolio!</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Harsh Shah — Software Engineer</title>
+  <meta name="description" content="Harsh Shah — full-stack software engineer & ML enthusiast. MS in Computer Science @ Northeastern University. A portfolio built as a code editor.">
+  <meta name="keywords" content="Harsh Shah, Software Engineer, Full Stack Developer, Machine Learning, Northeastern University, Portfolio">
+  <meta name="author" content="Harsh Shah">
+  <meta property="og:title" content="Harsh Shah — Software Engineer">
+  <meta property="og:description" content="Full-stack software engineer & ML enthusiast. MS in Computer Science @ Northeastern University.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/my-profile-img.jpg">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
 </head>
 
-<body class="index-page">
+<body>
+  <div class="win">
 
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    <!-- Title bar -->
+    <div class="titlebar">
+      <button class="menu-btn" id="menu-btn" aria-label="Toggle file explorer">☰</button>
+      <div class="lights" aria-hidden="true"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+      <span class="title">harsh@dev: <b>~/portfolio</b> — zsh</span>
+      <button class="cmdk" id="cmdk-btn">press <b>⌘K</b> for commands</button>
     </div>
 
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Harsh Shah</h1>
-    </a>
+    <div class="body">
 
-    <div class="social-links text-center">
-      <a href="https://github.com/Harsh-Shah012001" class="github"><i class="bi bi-github"></i></a>
-      <a href="mailto:shah.harsh8@northeastern.edu" class="email"><i class="bi bi-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/harshshah012001" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      <a href="https://github.com/Harsh-Shah012001/Harsh-Shah012001.github.io/raw/main/Resume_Harsh_Shah.pdf" class="resume" download="Resume_Harsh_Shah.pdf"><i class="bi bi-file-earmark-text"></i></a>
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#Education"><i class="bi bi-hdd-stack navicon"></i> Education</a></li>
-        <li><a href="#Experience"><i class="bi bi-hdd-stack navicon"></i> Experience</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
-        <li><a href="#publications"><i class="bi bi-hdd-stack navicon"></i> Publications</a></li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Harsh Shah</h2>
-        <p>I'm <span class="typed" data-typed-items="a Software Developer, a ML Enthusiast, a Problem Solver">a Software Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-<section id="about" class="about section">
-
-  <!-- Section Title -->
-  <!-- Section Title -->
-<div class="container" data-aos="fade-up">
-  <h2 style="font-size: 2.5rem; font-weight: 700; color: #2c3e50; position: relative; display: inline-block; padding-bottom: 5px; border-bottom: 4px solid transparent; border-image: linear-gradient(90deg, #667eea, #764ba2) 1; margin-bottom: 30px; margin-left: auto; margin-right: auto; left: 50%; transform: translateX(-50%);">About</h2>
-  <p style="color: #555; line-height: 1.8; font-size: 1.05rem; text-align: left;">I'm Harsh Shah, and I'm a motivated and enthusiastic person who is presently working towards a Masters degree in Computer Science at Northeastern University. My journey is driven by a strong desire to learn new things, a natural aptitude for handling challenging situations, and curiosity about new technologies. I like to approach problems with creativity and inventiveness.</p>
-  <p style="color: #555; line-height: 1.8; font-size: 1.05rem; margin-top: 15px; text-align: left;">I believe in the value of continuous learning and am guided by a strong set of principles—hard work, perseverance, and a deep sense of integrity. These values shape my approach to both personal and professional endeavors, ensuring that I tackle challenges with a thoughtful and ethical mindset. I am particularly excited about leveraging technology to make a positive impact. Whether it's through developing new solutions or exploring emerging trends in AI, I am always eager to dive into projects that offer both a challenge and an opportunity for growth. I believe in the power of collaboration and community, and I'm always looking for ways to contribute and learn from others. Feel free to connect with me to discuss technology, share ideas, or explore potential opportunities for collaboration!</p>
-</div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row gy-4 justify-content-center" style="align-items: center;">
-      <div class="col-lg-4">
-        <div style="position: relative; display: inline-block; width: 100%;">
-          <img src="assets/img/my-profile-img.jpg" style="width: 100%; border-radius: 15px; display: block; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 15px 40px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'" alt="Harsh Shah">
+      <!-- Sidebar / file tree -->
+      <aside class="sidebar" id="sidebar">
+        <div class="side-h">EXPLORER</div>
+        <nav class="tree" id="tree" aria-label="Sections">
+          <div class="folder"><span class="caret">▾</span> <span style="color:var(--orange)">harsh-shah/</span></div>
+          <button class="file" data-file="about"><span class="dot" style="background:var(--blue)"></span>about.md</button>
+          <button class="file" data-file="skills"><span class="dot" style="background:var(--yellow)"></span>skills.json</button>
+          <button class="file" data-file="experience"><span class="dot" style="background:var(--green)"></span>experience.log</button>
+          <button class="file" data-file="education"><span class="dot" style="background:var(--blue)"></span>education.md</button>
+          <button class="file" data-file="projects"><span class="dot" style="background:var(--orange)"></span>projects/</button>
+          <button class="file" data-file="publications"><span class="dot" style="background:var(--purple)"></span>publications.bib</button>
+          <button class="file" data-file="contact"><span class="dot" style="background:var(--aqua)"></span>contact.sh</button>
+        </nav>
+        <div class="side-foot">
+          <a href="https://github.com/Harsh-Shah012001" target="_blank" rel="noopener">github</a>
+          <a href="https://www.linkedin.com/in/harshshah012001" target="_blank" rel="noopener">linkedin</a>
         </div>
-      </div>
-      
-      <div class="col-lg-8 content">
-        <div style="background: #fff; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); border: 1px solid rgba(0, 0, 0, 0.05); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(0, 0, 0, 0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 20px rgba(0, 0, 0, 0.08)'">
-          <h2 style="color: #2c3e50; font-size: 2rem; font-weight: 700; margin-bottom: 15px; margin-top: 0;">Engineer &amp; AI/ML Enthusiast.</h2>
-          <p style="font-style: italic; color: #667eea; font-size: 1.15rem; margin-bottom: 30px; padding: 20px; background: rgba(102, 126, 234, 0.05); border-left: 4px solid #667eea; border-radius: 8px; margin-top: 0;">
-            "Always believe something wonderful is about to happen."
-          </p>
-          
-          <div class="row">
-            <div class="col-lg-12">
-              <div style="display: grid; gap: 15px;">
-                <div style="display: flex; align-items: center; padding: 15px; background: #f8f9fa; border-radius: 10px; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(102, 126, 234, 0.05)'; this.style.transform='translateX(5px)'" onmouseout="this.style.background='#f8f9fa'; this.style.transform='translateX(0)'">
-                  <div style="width: 45px; height: 45px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
-                    <i class="bi bi-envelope" style="font-size: 20px; color: #fff;"></i>
-                  </div>
-                  <div>
-                    <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 3px;">Email</strong>
-                    <span style="color: #666; font-size: 0.95rem;">shah.harsh8@northeastern.edu</span>
-                  </div>
-                </div>
+      </aside>
+      <div class="scrim" id="scrim" aria-hidden="true"></div>
 
-                <div style="display: flex; align-items: center; padding: 15px; background: #f8f9fa; border-radius: 10px; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(102, 126, 234, 0.05)'; this.style.transform='translateX(5px)'" onmouseout="this.style.background='#f8f9fa'; this.style.transform='translateX(0)'">
-                  <div style="width: 45px; height: 45px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
-                    <i class="bi bi-phone" style="font-size: 20px; color: #fff;"></i>
-                  </div>
-                  <div>
-                    <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 3px;">Phone</strong>
-                    <span style="color: #666; font-size: 0.95rem;">+1 (781) 824-2688</span>
-                  </div>
-                </div>
+      <!-- Main editor -->
+      <main class="main">
 
-                <div style="display: flex; align-items: center; padding: 15px; background: #f8f9fa; border-radius: 10px; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(102, 126, 234, 0.05)'; this.style.transform='translateX(5px)'" onmouseout="this.style.background='#f8f9fa'; this.style.transform='translateX(0)'">
-                  <div style="width: 45px; height: 45px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
-                    <i class="bi bi-geo-alt" style="font-size: 20px; color: #fff;"></i>
-                  </div>
-                  <div>
-                    <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 3px;">City</strong>
-                    <span style="color: #666; font-size: 0.95rem;">Boston, USA</span>
-                  </div>
+        <!-- Tabs -->
+        <div class="tabs" id="tabs" role="tablist">
+          <button class="tab" data-file="about" role="tab"><span class="dot" style="color:var(--blue)">●</span> about.md</button>
+          <button class="tab" data-file="skills" role="tab"><span class="dot" style="color:var(--yellow)">●</span> skills.json</button>
+          <button class="tab" data-file="experience" role="tab"><span class="dot" style="color:var(--green)">●</span> experience.log</button>
+          <button class="tab" data-file="education" role="tab"><span class="dot" style="color:var(--blue)">●</span> education.md</button>
+          <button class="tab" data-file="projects" role="tab"><span class="dot" style="color:var(--orange)">●</span> projects/</button>
+          <button class="tab" data-file="publications" role="tab"><span class="dot" style="color:var(--purple)">●</span> publications.bib</button>
+          <button class="tab" data-file="contact" role="tab"><span class="dot" style="color:var(--aqua)">●</span> contact.sh</button>
+        </div>
+
+        <!-- Editor body -->
+        <div class="editor" id="editor">
+
+          <!-- about.md -->
+          <section class="panel" data-file="about" role="tabpanel" aria-label="about.md">
+            <div class="filecode">
+              <div class="cl"><span class="t-comment">// welcome — run `help` in the terminal below, or press ⌘K</span></div>
+              <div class="cl">&nbsp;</div>
+              <div class="cl"><span class="t-h1"># Harsh Shah</span></div>
+              <div class="cl"><span class="t-quote">&gt; full-stack software engineer &amp; ML enthusiast</span></div>
+              <div class="cl">&nbsp;</div>
+              <div class="cl">I'm a software engineer with an MS in Computer Science from</div>
+              <div class="cl">Northeastern University. I build intelligent, reliable software —</div>
+              <div class="cl">from AI/RAG platforms and data pipelines to production web apps —</div>
+              <div class="cl">and I'm drawn to problems that are hard enough to be interesting.</div>
+              <div class="cl">&nbsp;</div>
+              <div class="cl"><span class="t-h2">## quick facts</span></div>
+              <div class="cl"><span class="t-bullet">-</span> based     <span class="t-punc">→</span> New York City, NY · USA</div>
+              <div class="cl"><span class="t-bullet">-</span> education <span class="t-punc">→</span> MS Computer Science @ Northeastern <span class="t-punc">(</span>GPA 3.9<span class="t-punc">)</span></div>
+              <div class="cl"><span class="t-bullet">-</span> focus     <span class="t-punc">→</span> full-stack engineering · applied ML</div>
+              <div class="cl"><span class="t-bullet">-</span> role      <span class="t-punc">→</span> <span class="t-str">Associate Software Engineer @ Atlas SP</span></div>
+              <div class="cl">&nbsp;</div>
+              <div class="cl"><span class="t-h2">## motto</span></div>
+              <div class="cl"><span class="t-quote">&gt; "Always believe something wonderful is about to happen."</span></div>
+              <div class="cl">&nbsp;</div>
+              <div class="cl">
+                <div class="btnrow">
+                  <button class="btn primary" data-action="open" data-arg="projects">▸ ls ~/projects</button>
+                  <a class="btn" href="Resume_Harsh_Shah.pdf" download>cat resume.pdf</a>
+                  <button class="btn" data-action="open" data-arg="contact">./contact.sh</button>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </section>
 
-  </div>
-
-</section><!-- /About Section -->
-
-  <!-- Skills Section -->
-<section id="skills" class="skills section light-background">
-  <!-- Section Title -->
-  <div class="container" data-aos="fade-up" style="text-align: center;">
-    <h2 style="font-size: 2.5rem; font-weight: 700; color: #2c3e50; position: relative; display: inline-block; padding-bottom: 5px; border-bottom: 4px solid transparent; border-image: linear-gradient(90deg, #667eea, #764ba2) 1;">Skills</h2>
-    <p style="color: #6c757d; font-size: 16px; margin-top: 10px;">Technologies and tools I work with</p>
-  </div>
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row">
-      
-      <!-- Programming Languages -->
-      <div class="col-lg-6 col-md-6" style="margin-bottom: 1.5rem;">
-        <div style="background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; height: 100%; border: 1px solid rgba(0, 0, 0, 0.05);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 20px rgba(0, 0, 0, 0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 15px rgba(0, 0, 0, 0.08)'">
-          <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-            <i class="bi bi-code-slash" style="font-size: 28px; color: #fff;"></i>
-          </div>
-          <h4 style="font-size: 20px; font-weight: 600; margin-bottom: 20px; color: #2c3e50;">Programming Languages</h4>
-          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">Python</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">C++</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">Java</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">C#</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">JavaScript</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Web Development -->
-      <div class="col-lg-6 col-md-6" style="margin-bottom: 1.5rem;">
-        <div style="background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; height: 100%; border: 1px solid rgba(0, 0, 0, 0.05);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 20px rgba(0, 0, 0, 0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 15px rgba(0, 0, 0, 0.08)'">
-          <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-            <i class="bi bi-globe" style="font-size: 28px; color: #fff;"></i>
-          </div>
-          <h4 style="font-size: 20px; font-weight: 600; margin-bottom: 20px; color: #2c3e50;">Web Development</h4>
-          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">HTML</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">CSS</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">React</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">Node.js</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">Blazor</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Databases -->
-      <div class="col-lg-6 col-md-6" style="margin-bottom: 1.5rem;">
-        <div style="background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; height: 100%; border: 1px solid rgba(0, 0, 0, 0.05);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 20px rgba(0, 0, 0, 0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 15px rgba(0, 0, 0, 0.08)'">
-          <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-            <i class="bi bi-database" style="font-size: 28px; color: #fff;"></i>
-          </div>
-          <h4 style="font-size: 20px; font-weight: 600; margin-bottom: 20px; color: #2c3e50;">Databases</h4>
-          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">MySQL</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">SQL Server</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">MongoDB</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">PostgreSQL</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">Snowflake</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">DynamoDB</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Cloud & Ops -->
-      <div class="col-lg-6 col-md-6" style="margin-bottom: 1.5rem;">
-        <div style="background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; height: 100%; border: 1px solid rgba(0, 0, 0, 0.05);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 20px rgba(0, 0, 0, 0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 15px rgba(0, 0, 0, 0.08)'">
-          <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-            <i class="bi bi-cloud" style="font-size: 28px; color: #fff;"></i>
-          </div>
-          <h4 style="font-size: 20px; font-weight: 600; margin-bottom: 20px; color: #2c3e50;">Cloud & Operations</h4>
-          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">Azure</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">Docker</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">Kubernetes</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">Grafana</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">Prometheus</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">CI/CD</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">Jenkins</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">AWS S3</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Frameworks -->
-      <div class="col-lg-6 col-md-6" style="margin-bottom: 1.5rem;">
-        <div style="background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; height: 100%; border: 1px solid rgba(0, 0, 0, 0.05);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 20px rgba(0, 0, 0, 0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 15px rgba(0, 0, 0, 0.08)'">
-          <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-            <i class="bi bi-box-seam" style="font-size: 28px; color: #fff;"></i>
-          </div>
-          <h4 style="font-size: 20px; font-weight: 600; margin-bottom: 20px; color: #2c3e50;">Frameworks & Libraries</h4>
-          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">.NET</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">Apache Spark</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">TensorFlow</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">Scikit-learn</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">PyTorch</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">Keras</span>
-            <span style="background: #f8f9fa; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.color='#fff'; this.style.transform='scale(1.05)'" onmouseout="this.style.background='#f8f9fa'; this.style.color='#495057'; this.style.transform='scale(1)'">NLTK</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section><!-- /Skills Section -->
-
-
-    <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 40px 0; margin: 0;">
-    <section id="resume" style="background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); padding: 50px; margin: 20px auto; max-width: 1200px;">
-        <div style="text-align: center; margin-bottom: 30px;">
-            <h2 style="font-size: 2.5rem; font-weight: 700; color: #2c3e50; position: relative; display: inline-block; padding-bottom: 5px; border-bottom: 4px solid transparent; border-image: linear-gradient(90deg, #667eea, #764ba2) 1;">Resume</h2>
-            <br>
-            <a href="https://github.com/Harsh-Shah012001/Harsh-Shah012001.github.io/raw/main/Resume_Harsh_Shah.pdf" style="background: linear-gradient(90deg, #667eea, #764ba2); border: none; padding: 12px 30px; border-radius: 25px; font-weight: 600; margin-top: 15px; color: white; text-decoration: none; display: inline-block; transition: transform 0.3s, box-shadow 0.3s;" download="Resume_Harsh_Shah.pdf" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 25px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">Download My Resume</a>
-        </div>
-
-        <div style="max-width: 1140px; margin: 0 auto;">
-            <!-- Single Column Layout for Better Visual Balance -->
-            <div>
-                <div id="Education">
-                    <h3 style="font-size: 1.75rem; font-weight: 700; color: #667eea; margin-bottom: 30px; padding-bottom: 15px; border-bottom: 3px solid #f0f0f0;">Education</h3>
-                    
-                    <div style="padding: 25px; margin-bottom: 25px; background: #f8f9fa; border-radius: 15px; border-left: 4px solid #667eea; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateX(5px)'; this.style.boxShadow='0 5px 15px rgba(0, 0, 0, 0.1)'" onmouseout="this.style.transform='translateX(0)'; this.style.boxShadow='none'">
-                        <h4 style="font-size: 1.3rem; font-weight: 700; color: #2c3e50; margin-bottom: 8px; margin-top: 0;">Master of Science in Computer Science</h4>
-                        <h5 style="font-size: 1rem; font-weight: 600; color: #764ba2; margin-bottom: 10px; display: inline-block; background: rgba(118, 75, 162, 0.1); padding: 5px 15px; border-radius: 20px; margin-top: 0;">Jan 2024 - Dec 2025</h5>
-                        <p style="color: #666; line-height: 1.6; margin-bottom: 8px; margin-top: 8px;"><em style="color: #555; font-style: normal; font-weight: 500;">Northeastern University, Boston, MA</em></p>
-                        <p style="color: #666; line-height: 1.6; margin-bottom: 8px; margin-top: 8px;"><em style="color: #555; font-style: normal; font-weight: 500;">GPA: 3.8/4.0</em></p>
-                        <p style="color: #666; line-height: 1.6; margin-bottom: 8px; margin-top: 8px;"><strong>Coursework:</strong> : Programming Design Paradigm, Foundations of Artificial Intelligence, Algorithms, Machine Learning, Web technology</p>
-                    </div>
-
-                    <div style="padding: 25px; margin-bottom: 25px; background: #f8f9fa; border-radius: 15px; border-left: 4px solid #667eea; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateX(5px)'; this.style.boxShadow='0 5px 15px rgba(0, 0, 0, 0.1)'" onmouseout="this.style.transform='translateX(0)'; this.style.boxShadow='none'">
-                        <h4 style="font-size: 1.3rem; font-weight: 700; color: #2c3e50; margin-bottom: 8px; margin-top: 0;">Bachelor of Engineering in Computer Engineering</h4>
-                        <h5 style="font-size: 1rem; font-weight: 600; color: #764ba2; margin-bottom: 10px; display: inline-block; background: rgba(118, 75, 162, 0.1); padding: 5px 15px; border-radius: 20px; margin-top: 0;">Jun 2019 - Jun 2023</h5>
-                        <p style="color: #666; line-height: 1.6; margin-bottom: 8px; margin-top: 8px;"><em style="color: #555; font-style: normal; font-weight: 500;">Savitribai Phule Pune University, Pune, MH, India</em></p>
-                        <p style="color: #666; line-height: 1.6; margin-bottom: 8px; margin-top: 8px;"><em style="color: #555; font-style: normal; font-weight: 500;">GPA: 9.1/10.0</em></p>
-                        <p style="color: #666; line-height: 1.6; margin-bottom: 8px; margin-top: 8px;"><strong>Coursework:</strong> Machine Learning, Data Structures and Algorithms, Database Management Systems, Web Development, Object Oriented Programming, Cloud Computing, Blockchain Technology, Object Oriented Design, Big Data Processing and
-Analytics, Distributed Systems</p>
-                    </div>
-                </div>
+          <!-- skills.json -->
+          <section class="panel" data-file="skills" role="tabpanel" aria-label="skills.json">
+            <div class="filecode">
+              <div class="cl"><span class="t-punc">{</span></div>
+              <div class="cl">  <span class="t-prop">"languages"</span><span class="t-punc">:</span>   <span class="t-punc">[</span><span class="t-str">"Python"</span>, <span class="t-str">"Java"</span>, <span class="t-str">"C++"</span>, <span class="t-str">"C#"</span>, <span class="t-str">"R"</span>, <span class="t-str">"JavaScript"</span><span class="t-punc">]</span>,</div>
+              <div class="cl">  <span class="t-prop">"web"</span><span class="t-punc">:</span>         <span class="t-punc">[</span><span class="t-str">"HTML"</span>, <span class="t-str">"CSS"</span>, <span class="t-str">"React"</span>, <span class="t-str">"Node.js"</span>, <span class="t-str">".NET"</span>, <span class="t-str">"Blazor"</span><span class="t-punc">]</span>,</div>
+              <div class="cl">  <span class="t-prop">"databases"</span><span class="t-punc">:</span>   <span class="t-punc">[</span><span class="t-str">"MySQL"</span>, <span class="t-str">"SQL Server"</span>, <span class="t-str">"MongoDB"</span>, <span class="t-str">"PostgreSQL"</span>, <span class="t-str">"DynamoDB"</span>, <span class="t-str">"Snowflake"</span>, <span class="t-str">"Pinecone"</span><span class="t-punc">]</span>,</div>
+              <div class="cl">  <span class="t-prop">"ml_and_data"</span><span class="t-punc">:</span> <span class="t-punc">[</span><span class="t-str">"TensorFlow"</span>, <span class="t-str">"PyTorch"</span>, <span class="t-str">"Keras"</span>, <span class="t-str">"Scikit-learn"</span>, <span class="t-str">"NLTK"</span>, <span class="t-str">"LangChain"</span>, <span class="t-str">"MLflow"</span>, <span class="t-str">"Apache Airflow"</span><span class="t-punc">]</span>,</div>
+              <div class="cl">  <span class="t-prop">"cloud_ops"</span><span class="t-punc">:</span>   <span class="t-punc">[</span><span class="t-str">"Azure"</span>, <span class="t-str">"Docker"</span>, <span class="t-str">"Kubernetes"</span>, <span class="t-str">"Git"</span>, <span class="t-str">"CI/CD"</span>, <span class="t-str">"Jenkins"</span>, <span class="t-str">"Prometheus"</span>, <span class="t-str">"Grafana"</span>, <span class="t-str">"AWS S3"</span><span class="t-punc">]</span></div>
+              <div class="cl"><span class="t-punc">}</span></div>
+              <div class="cl">&nbsp;</div>
+              <div class="cl"><span class="t-comment">// always learning — currently going deeper on distributed systems, RAG &amp; LLM tooling</span></div>
             </div>
+          </section>
 
-            <div style="margin-top: 40px;">
-                <div id="Experience">
-                    <h3 style="font-size: 1.75rem; font-weight: 700; color: #667eea; margin-bottom: 30px; padding-bottom: 15px; border-bottom: 3px solid #f0f0f0;">Experience</h3>
-
-                    <div style="padding: 25px; margin-bottom: 25px; background: #f8f9fa; border-radius: 15px; border-left: 4px solid #667eea; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateX(5px)'; this.style.boxShadow='0 5px 15px rgba(0, 0, 0, 0.1)'" onmouseout="this.style.transform='translateX(0)'; this.style.boxShadow='none'">
-                        <h4 style="font-size: 1.3rem; font-weight: 700; color: #2c3e50; margin-bottom: 8px; margin-top: 0;">Teaching Assistant</h4>
-                        <h5 style="font-size: 1rem; font-weight: 600; color: #764ba2; margin-bottom: 10px; display: inline-block; background: rgba(118, 75, 162, 0.1); padding: 5px 15px; border-radius: 20px; margin-top: 0;">May 2024 - Present</h5>
-                        <p style="color: #666; line-height: 1.6; margin-bottom: 8px; margin-top: 8px;"><em style="color: #555; font-style: normal; font-weight: 500;">Northeastern University, Boston, MA</em></p>
-                        <ul style="margin-top: 15px; padding-left: 20px; list-style-type: disc;">
-                            <li style="color: #555; line-height: 1.8; margin-bottom: 10px;">Teaching Assistant for CS 5800 (Algorithms) - Fall 2025 and CS 3000 (Algorithms and Data) - Summer-1 & Fall 2024.</li>
-                            <li style="color: #555; line-height: 1.8; margin-bottom: 10px;">Provided support through grading, facilitating discussions, and offering office hours to help students understand the concepts.</li>
-                        </ul>
-                    </div>
-
-                    <div style="padding: 25px; margin-bottom: 25px; background: #f8f9fa; border-radius: 15px; border-left: 4px solid #667eea; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateX(5px)'; this.style.boxShadow='0 5px 15px rgba(0, 0, 0, 0.1)'" onmouseout="this.style.transform='translateX(0)'; this.style.boxShadow='none'">
-                        <h4 style="font-size: 1.3rem; font-weight: 700; color: #2c3e50; margin-bottom: 8px; margin-top: 0;">Software Engineer Intern</h4>
-                        <h5 style="font-size: 1rem; font-weight: 600; color: #764ba2; margin-bottom: 10px; display: inline-block; background: rgba(118, 75, 162, 0.1); padding: 5px 15px; border-radius: 20px; margin-top: 0;">Jan 2025 - Aug 2025</h5>
-                        <p style="color: #666; line-height: 1.6; margin-bottom: 8px; margin-top: 8px;"><em style="color: #555; font-style: normal; font-weight: 500;">Atlas SP Partners, New York City, USA</em></p>
-                        <ul style="margin-top: 15px; padding-left: 20px; list-style-type: disc;">
-                            <li style="color: #555; line-height: 1.8; margin-bottom: 10px;">Collaborated in a cross-functional team to develop and implement full stack applications, automation workflows and centralized database storage for the Residential Mortgage division of Securitized Products.</li>
-                            <li style="color: #555; line-height: 1.8; margin-bottom: 10px;">Automated the daily margin call workflow using Python saving 3-5 hours of manual effort daily.</li>
-                            <li style="color: #555; line-height: 1.8; margin-bottom: 10px;">Developed full stack solution for daily margin call workflow using .NET as backend and React as frontend with number of microservices hosted on Azure.</li>
-                            <li style="color: #555; line-height: 1.8; margin-bottom: 10px;">Built a config-driven, fully automated data ingestion pipeline in Python, integrating data from 3+ businesses units into Snowflake, enabling centralized, reliable storage and reducing Excel based systems by 70%.</li>
-                            <li style="color: #555; line-height: 1.8; margin-bottom: 10px;">Configured and managed automated workflow jobs in Control-M Helix to automate and orchestrate daily processes.</li>
-                            <li style="color: #555; line-height: 1.8; margin-bottom: 10px;">Developed a Python based fully automated solution for Resi Due Diligence, paired with an Excel interface via PyXll, reducing manual effort by 15-20 hours per deal.</li>
-                            <li style="color: #555; line-height: 1.8; margin-bottom: 10px;">Developed an email monitoring Python package using Microsoft Graph API to track mailboxes and send bulk emails.</li>
-                        </ul>
-                    </div>
-
-                    <div style="padding: 25px; margin-bottom: 25px; background: #f8f9fa; border-radius: 15px; border-left: 4px solid #667eea; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateX(5px)'; this.style.boxShadow='0 5px 15px rgba(0, 0, 0, 0.1)'" onmouseout="this.style.transform='translateX(0)'; this.style.boxShadow='none'">
-                        <h4 style="font-size: 1.3rem; font-weight: 700; color: #2c3e50; margin-bottom: 8px; margin-top: 0;">Software Engineer Intern</h4>
-                        <h5 style="font-size: 1rem; font-weight: 600; color: #764ba2; margin-bottom: 10px; display: inline-block; background: rgba(118, 75, 162, 0.1); padding: 5px 15px; border-radius: 20px; margin-top: 0;">Apr 2022 - Apr 2023</h5>
-                        <p style="color: #666; line-height: 1.6; margin-bottom: 8px; margin-top: 8px;"><em style="color: #555; font-style: normal; font-weight: 500;">Knorr-Bremse Technology Center India Pvt Ltd, Pune, India</em></p>
-                        <ul style="margin-top: 15px; padding-left: 20px; list-style-type: disc;">
-                            <li style="color: #555; line-height: 1.8; margin-bottom: 10px;">Improved the efficiency and accuracy by 70% in data management process by automating the process of MS SQL database updation by developing a Python script.</li>
-                            <li style="color: #555; line-height: 1.8; margin-bottom: 10px;">Designed and maintained Microsoft SQL Server database schema to support various Software Engineering Key Performance Indicator (KPI) metrics following the Agile methodology for software development.</li>
-                            <li style="color: #555; line-height: 1.8; margin-bottom: 10px;">Configured and developed Grafana dashboards for live data visualization of various KPI metrics.</li>
-                            <li style="color: #555; line-height: 1.8; margin-bottom: 10px;">Improved continuous integration and deployment (CI/CD) of Jenkins pipelines by ensuring consistent and reliable deployment and maintenance processes.</li>
-                        </ul>
-                    </div>
-
-                    <div style="padding: 25px; margin-bottom: 25px; background: #f8f9fa; border-radius: 15px; border-left: 4px solid #667eea; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateX(5px)'; this.style.boxShadow='0 5px 15px rgba(0, 0, 0, 0.1)'" onmouseout="this.style.transform='translateX(0)'; this.style.boxShadow='none'">
-                        <h4 style="font-size: 1.3rem; font-weight: 700; color: #2c3e50; margin-bottom: 8px; margin-top: 0;">Data Science Intern</h4>
-                        <h5 style="font-size: 1rem; font-weight: 600; color: #764ba2; margin-bottom: 10px; display: inline-block; background: rgba(118, 75, 162, 0.1); padding: 5px 15px; border-radius: 20px; margin-top: 0;">Sept 2021 - Dec 2022</h5>
-                        <p style="color: #666; line-height: 1.6; margin-bottom: 8px; margin-top: 8px;"><em style="color: #555; font-style: normal; font-weight: 500;">ShapeAI, Pune, India</em></p>
-                        <ul style="margin-top: 15px; padding-left: 20px; list-style-type: disc;">
-                            <li style="color: #555; line-height: 1.8; margin-bottom: 10px;">Achieved 96% accuracy in heart disease detection developing a Support Vector Machine (SVM) model with multiple kernels along with model optimization and hyperparameter tuning.</li>
-                            <li style="color: #555; line-height: 1.8; margin-bottom: 10px;">Used scikit-learn and matplotlib for statistical data analysis of patient symptoms and creating effective visualizations to observe the trend of symptoms over wide range of patients.</li>
-                        </ul>
-                    </div>
-                </div>
+          <!-- experience.log -->
+          <section class="panel" data-file="experience" role="tabpanel" aria-label="experience.log">
+            <div class="filecode">
+              <div class="cl"><span class="t-comment"># tail -f experience.log</span></div>
+              <div class="cl">&nbsp;</div>
+              <div class="cl"><span class="t-date">[2026-02 → present]</span> <span class="t-lvl">INFO</span>  Atlas SP Partners · New York City</div>
+              <div class="cl">   <span class="t-prop">role</span>: Associate Software Engineer</div>
+              <div class="cl">   <span class="t-bullet">▸</span> Full-stack apps, automation &amp; centralized storage for the Residential Mortgage + Commercial Real Estate divisions</div>
+              <div class="cl">   <span class="t-bullet">▸</span> Architected a distributed AI document-intelligence platform (Python, React, Docker, LangChain, Azure Service Bus)</div>
+              <div class="cl">   <span class="t-bullet">▸</span> Built a scalable RAG pipeline with vector embeddings + a vector DB — semantic retrieval over 100+ docs/day across asset classes</div>
+              <div class="cl">   <span class="t-bullet">▸</span> Shipped a CRE facility-onboarding platform (React + Python) automating facilities, covenants, tranches &amp; funding pools — replacing Excel</div>
+              <div class="cl">&nbsp;</div>
+              <div class="cl"><span class="t-date">[2025-01 → 2025-08]</span> <span class="t-lvl">INFO</span>  Atlas SP Partners · New York City</div>
+              <div class="cl">   <span class="t-prop">role</span>: Software Engineer Intern</div>
+              <div class="cl">   <span class="t-bullet">▸</span> Full-stack daily margin-call platform (.NET, React, Python, REST APIs) on Azure microservices — saved 3–5 hrs/day</div>
+              <div class="cl">   <span class="t-bullet">▸</span> Config-driven ingestion pipeline into Snowflake (3+ asset classes) — cut Excel dependency by 70%</div>
+              <div class="cl">   <span class="t-bullet">▸</span> Orchestrated daily jobs in Control-M Helix; automated Resi Due Diligence via PyXLL (–15–20 hrs/deal)</div>
+              <div class="cl">   <span class="t-bullet">▸</span> Email-monitoring Python package on the Microsoft Graph API</div>
+              <div class="cl">&nbsp;</div>
+              <div class="cl"><span class="t-date">[2024-05 → 2025-12]</span> <span class="t-lvl">INFO</span>  Northeastern University · Boston, MA</div>
+              <div class="cl">   <span class="t-prop">role</span>: Teaching Assistant</div>
+              <div class="cl">   <span class="t-bullet">▸</span> TA for CS 5800 (Algorithms · Fall '25) &amp; CS 3000 (Algorithms &amp; Data · '24)</div>
+              <div class="cl">   <span class="t-bullet">▸</span> Grading, leading discussions, and office hours to deepen understanding</div>
+              <div class="cl">&nbsp;</div>
+              <div class="cl"><span class="t-date">[2022-04 → 2023-04]</span> <span class="t-lvl">INFO</span>  Knorr-Bremse Technology Center · Pune, India</div>
+              <div class="cl">   <span class="t-prop">role</span>: Software Engineer Intern</div>
+              <div class="cl">   <span class="t-bullet">▸</span> Automated MS SQL updates in Python — +70% efficiency &amp; accuracy in data management</div>
+              <div class="cl">   <span class="t-bullet">▸</span> Designed a SQL Server schema powering Software-Engineering KPI metrics (Agile)</div>
+              <div class="cl">   <span class="t-bullet">▸</span> Built Grafana dashboards for live KPI visualization; hardened Jenkins CI/CD</div>
+              <div class="cl">&nbsp;</div>
+              <div class="cl"><span class="t-date">[2021-09 → 2022-12]</span> <span class="t-lvl warn">DATA</span>  ShapeAI · Pune, India</div>
+              <div class="cl">   <span class="t-prop">role</span>: Data Science Intern</div>
+              <div class="cl">   <span class="t-bullet">▸</span> 96% accuracy in heart-disease detection with a multi-kernel SVM (tuning + optimization)</div>
+              <div class="cl">   <span class="t-bullet">▸</span> scikit-learn + matplotlib for symptom analysis and trend visualization</div>
             </div>
+          </section>
+
+          <!-- education.md -->
+          <section class="panel" data-file="education" role="tabpanel" aria-label="education.md">
+            <div class="filecode">
+              <div class="cl"><span class="t-h1"># education</span></div>
+              <div class="cl">&nbsp;</div>
+              <div class="cl"><span class="t-h2">## M.S. Computer Science</span></div>
+              <div class="cl">Northeastern University · Boston, MA <span class="t-date">[ Jan 2024 – Dec 2025 ]</span></div>
+              <div class="cl"><span class="t-prop">gpa</span>: <span class="t-num">3.9</span> / 4.0</div>
+              <div class="cl"><span class="t-prop">coursework</span>: Programming Design Paradigm, Foundations of AI, Algorithms,</div>
+              <div class="cl">            Machine Learning, ML Operations (MLOps), Natural Language Processing,</div>
+              <div class="cl">            Database Management Systems, Web Technology</div>
+              <div class="cl">&nbsp;</div>
+              <div class="cl"><span class="t-h2">## B.E. Computer Engineering</span></div>
+              <div class="cl">Savitribai Phule Pune University · Pune, India <span class="t-date">[ 2019 – 2023 ]</span></div>
+              <div class="cl"><span class="t-prop">gpa</span>: <span class="t-num">9.1</span> / 10.0</div>
+              <div class="cl"><span class="t-prop">coursework</span>: ML, DSA, DBMS, Web Dev, OOP, Cloud Computing, Blockchain,</div>
+              <div class="cl">            Object-Oriented Design, Big Data Analytics, Distributed Systems</div>
+            </div>
+          </section>
+
+          <!-- projects/ -->
+          <section class="panel" data-file="projects" role="tabpanel" aria-label="projects">
+            <div class="dirview">
+              <div class="dir-cmd"><span class="prompt">harsh@dev</span>:<span style="color:var(--blue)">~</span>$ ls -la ~/projects &nbsp;<span class="t-comment"># 7 repositories</span></div>
+              <div class="proj-grid">
+
+                <article class="proj">
+                  <div class="proj-head"><span class="perm">drwxr-xr-x</span> <span class="name">bluebikes-demand-mlops/</span> <span class="star">★</span></div>
+                  <div class="proj-body">
+                    <p>End-to-end MLOps pipeline for hourly bike-demand prediction using 40+ features — R² &gt; 0.85 with XGBoost/LightGBM/Random Forest, tracked in MLflow. CI/CD deployment with drift &amp; bias monitoring (Evidently AI) and Slack alerting; cut runtime by 70%.</p>
+                    <div class="proj-tags"><span>MLOps</span><span>Airflow</span><span>Docker</span><span>XGBoost</span><span>MLflow</span></div>
+                    <a class="proj-link" href="https://github.com/PranavViswanathan/Rebalance-AI" target="_blank" rel="noopener">cd → github ↗</a>
+                  </div>
+                </article>
+
+                <article class="proj">
+                  <div class="proj-head"><span class="perm">drwxr-xr-x</span> <span class="name">text-translation/</span> <span class="star">★</span></div>
+                  <div class="proj-body">
+                    <p>French→English translation with a from-scratch Transformer + LSTM (no pretrained libs) — 91% accuracy using core NLP techniques.</p>
+                    <div class="proj-tags"><span>Transformer</span><span>LSTM</span><span>Python</span><span>NLP</span></div>
+                    <a class="proj-link" href="https://github.com/Harsh-Shah012001/Text-Translation" target="_blank" rel="noopener">cd → github ↗</a>
+                  </div>
+                </article>
+
+                <article class="proj">
+                  <div class="proj-head"><span class="perm">drwxr-xr-x</span> <span class="name">forgery-detection/</span> <span class="star">★</span></div>
+                  <div class="proj-body">
+                    <p>Image manipulation &amp; forgery detection with ResNet + UNet segmentation — 93% accuracy on the CASIA dataset. Led the team.</p>
+                    <div class="proj-tags"><span>ResNet</span><span>UNet</span><span>CNN</span><span>Python</span></div>
+                    <a class="proj-link" href="https://github.com/Harsh-Shah012001/Image_Manipulation_Detection_Streamlit_SegematationModel" target="_blank" rel="noopener">cd → github ↗</a>
+                  </div>
+                </article>
+
+                <article class="proj">
+                  <div class="proj-head"><span class="perm">drwxr-xr-x</span> <span class="name">heart-disease/</span></div>
+                  <div class="proj-body">
+                    <p>SVM heart-disease predictor with Selenium-scraped data; an RBF-kernel classifier gave the best performance on the set.</p>
+                    <div class="proj-tags"><span>SVM</span><span>Web Scraping</span><span>Data Viz</span><span>Python</span></div>
+                    <a class="proj-link" href="https://github.com/Harsh-Shah012001/Heart-Disease-Detection" target="_blank" rel="noopener">cd → github ↗</a>
+                  </div>
+                </article>
+
+                <article class="proj">
+                  <div class="proj-head"><span class="perm">drwxr-xr-x</span> <span class="name">drowsiness-detection/</span></div>
+                  <div class="proj-body">
+                    <p>Real-time driver-drowsiness detection with CNNs + OpenCV at 90% accuracy, with an alarm to alert drivers to pull over.</p>
+                    <div class="proj-tags"><span>OpenCV</span><span>TensorFlow</span><span>CNN</span><span>Python</span></div>
+                    <a class="proj-link" href="https://github.com/Harsh-Shah012001/DRIVER_DROWSINESS_CNN_TNESORFLOW" target="_blank" rel="noopener">cd → github ↗</a>
+                  </div>
+                </article>
+
+                <article class="proj">
+                  <div class="proj-head"><span class="perm">drwxr-xr-x</span> <span class="name">knn-model/</span></div>
+                  <div class="proj-body">
+                    <p>A clean implementation of K-Nearest Neighbours — a "lazy learner" classifying by similarity, handling non-linear data for both classification &amp; regression.</p>
+                    <div class="proj-tags"><span>Supervised ML</span><span>Data Analysis</span><span>Python</span></div>
+                    <a class="proj-link" href="https://github.com/Harsh-Shah012001/KNN-Model" target="_blank" rel="noopener">cd → github ↗</a>
+                  </div>
+                </article>
+
+                <article class="proj">
+                  <div class="proj-head"><span class="perm">drwxr-xr-x</span> <span class="name">customer-segmentation/</span></div>
+                  <div class="proj-body">
+                    <p>K-Means clustering to segment mall customers by income &amp; spend — surfacing distinct customer types for targeted marketing.</p>
+                    <div class="proj-tags"><span>K-Means</span><span>Unsupervised ML</span><span>Python</span></div>
+                    <a class="proj-link" href="https://github.com/Harsh-Shah012001/K-Means-Clustering" target="_blank" rel="noopener">cd → github ↗</a>
+                  </div>
+                </article>
+
+              </div>
+              <div class="btnrow" style="margin-top:20px">
+                <a class="btn" href="https://github.com/Harsh-Shah012001" target="_blank" rel="noopener">▸ git remote -v → github.com/Harsh-Shah012001 ↗</a>
+              </div>
+            </div>
+          </section>
+
+          <!-- publications.bib -->
+          <section class="panel" data-file="publications" role="tabpanel" aria-label="publications.bib">
+            <div class="filecode">
+              <div class="cl"><span class="t-comment">% publications.bib — 2 entries</span></div>
+              <div class="cl">&nbsp;</div>
+              <div class="cl"><span class="t-key">@article</span><span class="t-punc">{</span><span class="t-fn">shah2023gan</span>,</div>
+              <div class="cl">  <span class="t-prop">title</span>   = <span class="t-punc">{</span><span class="t-str">Exploring the Potential of Generative Adversarial Networks: A Comparative Study of GAN</span><span class="t-punc">}</span>,</div>
+              <div class="cl">  <span class="t-prop">author</span>  = <span class="t-punc">{</span><span class="t-str">Shah, Harsh</span><span class="t-punc">}</span>,</div>
+              <div class="cl">  <span class="t-prop">journal</span> = <span class="t-punc">{</span><span class="t-str">IRJET</span><span class="t-punc">}</span>,</div>
+              <div class="cl">  <span class="t-prop">year</span>    = <span class="t-punc">{</span><span class="t-num">2023</span><span class="t-punc">}</span>,</div>
+              <div class="cl">  <span class="t-prop">url</span>     = <span class="t-punc">{</span><a class="t-link" href="https://www.irjet.net/archives/V10/i5/IRJET-V10I5206.pdf" target="_blank" rel="noopener">https://irjet.net/archives/V10/i5/IRJET-V10I5206.pdf</a><span class="t-punc">}</span></div>
+              <div class="cl"><span class="t-punc">}</span> &nbsp; <a class="t-link" href="https://www.irjet.net/archives/V10/i5/IRJET-V10I5206.pdf" target="_blank" rel="noopener">↗ read</a></div>
+              <div class="cl">&nbsp;</div>
+              <div class="cl"><span class="t-key">@article</span><span class="t-punc">{</span><span class="t-fn">shah2023uav</span>,</div>
+              <div class="cl">  <span class="t-prop">title</span>   = <span class="t-punc">{</span><span class="t-str">Autonomous UAV Swarms: Powering Up with AI</span><span class="t-punc">}</span>,</div>
+              <div class="cl">  <span class="t-prop">author</span>  = <span class="t-punc">{</span><span class="t-str">Shah, Harsh</span><span class="t-punc">}</span>,</div>
+              <div class="cl">  <span class="t-prop">journal</span> = <span class="t-punc">{</span><span class="t-str">IJRASET</span><span class="t-punc">}</span>,</div>
+              <div class="cl">  <span class="t-prop">year</span>    = <span class="t-punc">{</span><span class="t-num">2023</span><span class="t-punc">}</span>,</div>
+              <div class="cl">  <span class="t-prop">url</span>     = <span class="t-punc">{</span><a class="t-link" href="https://www.ijraset.com/research-paper/autonomous-uav-swarms-powering-up-with-ai" target="_blank" rel="noopener">https://ijraset.com/research-paper/autonomous-uav-swarms-powering-up-with-ai</a><span class="t-punc">}</span></div>
+              <div class="cl"><span class="t-punc">}</span> &nbsp; <a class="t-link" href="https://www.ijraset.com/research-paper/autonomous-uav-swarms-powering-up-with-ai" target="_blank" rel="noopener">↗ read</a></div>
+            </div>
+          </section>
+
+          <!-- contact.sh -->
+          <section class="panel" data-file="contact" role="tabpanel" aria-label="contact.sh">
+            <div class="filecode">
+              <div class="cl"><span class="t-comment">#!/bin/bash</span></div>
+              <div class="cl"><span class="t-comment"># reach out — I usually reply within a day</span></div>
+              <div class="cl">&nbsp;</div>
+              <div class="cl"><span class="t-prop">NAME</span>=<span class="t-str">"Harsh Shah"</span></div>
+              <div class="cl"><span class="t-prop">EMAIL</span>=<span class="t-str">"hshah012001@gmail.com"</span></div>
+              <div class="cl"><span class="t-prop">PHONE</span>=<span class="t-str">"+1 (781) 824-2688"</span></div>
+              <div class="cl"><span class="t-prop">LOCATION</span>=<span class="t-str">"New York City, NY · USA"</span></div>
+              <div class="cl"><span class="t-prop">STATUS</span>=<span class="t-str">"open to interesting problems &amp; connections"</span></div>
+              <div class="cl">&nbsp;</div>
+              <div class="cl"><span class="t-fn">echo</span> <span class="t-str">"Let's build something together."</span></div>
+              <div class="cl">&nbsp;</div>
+              <div class="cl">
+                <div class="btnrow">
+                  <a class="btn primary" href="mailto:hshah012001@gmail.com">✉ email me</a>
+                  <a class="btn" href="Resume_Harsh_Shah.pdf" download>⤓ résumé.pdf</a>
+                  <a class="btn" href="https://github.com/Harsh-Shah012001" target="_blank" rel="noopener">↗ github</a>
+                  <a class="btn" href="https://www.linkedin.com/in/harshshah012001" target="_blank" rel="noopener">↗ linkedin</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
         </div>
-    </section>
+
+        <!-- Terminal -->
+        <div class="term">
+          <div class="term-head">
+            <span class="tdot"></span> TERMINAL
+            <button class="clr" id="term-clear">clear</button>
+          </div>
+          <div class="term-out" id="term-out" aria-live="polite"></div>
+          <form class="term-in" id="term-form" autocomplete="off">
+            <span class="prompt">harsh@dev<span class="sig">:</span><span class="path">~</span><span class="sig">$</span></span>
+            <input id="term-input" type="text" aria-label="Terminal command" spellcheck="false">
+          </form>
+        </div>
+
+        <!-- Status bar -->
+        <div class="status">
+          <span class="seg">⎇ main<span style="opacity:.6">*</span></span>
+          <span class="seg hide-sm">UTF-8</span>
+          <span class="seg" id="status-lang">Markdown</span>
+          <span class="sp seg hide-sm" id="status-pos">Ln 1, Col 1</span>
+          <span class="seg">♥ built by Harsh</span>
+        </div>
+
+      </main>
+    </div>
   </div>
 
-
-  <style>
-  @media (max-width: 768px) {
-    /* Projects section adjustments */
-    #portfolio {
-      padding: 25px 15px !important;
-      margin: 10px auto !important;
-    }
-    
-    #portfolio > div:first-child {
-      margin-bottom: 30px !important;
-    }
-    
-    #portfolio > div:first-child h2 {
-      font-size: 1.75rem !important;
-    }
-    
-    #portfolio > div > div {
-      grid-template-columns: 1fr !important;
-      gap: 20px !important;
-    }
-    
-    #portfolio > div > div > div > div {
-      padding: 18px !important;
-    }
-    
-    #portfolio > div > div > div h4 {
-      font-size: 1.1rem !important;
-    }
-    
-    #portfolio > div > div > div p {
-      font-size: 0.88rem !important;
-    }
-    
-    #portfolio > div > div > div a {
-      padding: 9px 18px !important;
-      font-size: 0.8rem !important;
-    }
-    
-    /* Publications section adjustments */
-    #publications {
-      padding: 25px 15px !important;
-      margin: 10px auto !important;
-    }
-    
-    #publications > div:first-child {
-      margin-bottom: 30px !important;
-    }
-    
-    #publications > div:first-child h2 {
-      font-size: 1.75rem !important;
-    }
-    
-    #publications > div:first-child p {
-      font-size: 0.95rem !important;
-      padding: 0 10px !important;
-    }
-    
-    #publications > div > div {
-      grid-template-columns: 1fr !important;
-      gap: 20px !important;
-    }
-    
-    #publications > div > div > div {
-      padding: 20px !important;
-    }
-    
-    #publications > div > div > div h4 {
-      font-size: 1.1rem !important;
-    }
-    
-    #publications > div > div > div p {
-      font-size: 0.88rem !important;
-      line-height: 1.6 !important;
-    }
-    
-    #publications > div > div > div a {
-      padding: 9px 18px !important;
-      font-size: 0.8rem !important;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    #portfolio > div:first-child h2,
-    #publications > div:first-child h2 {
-      font-size: 1.5rem !important;
-    }
-    
-    #portfolio > div > div > div h4,
-    #publications > div > div > div h4 {
-      font-size: 1.05rem !important;
-    }
-    
-    #portfolio > div > div > div p,
-    #publications > div > div > div p {
-      font-size: 0.85rem !important;
-    }
-  }
-</style>
-    <!-- Portfolio Section -->
-<div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: white; min-height: 100vh; padding: 40px 0; margin: 0;">
-  <section id="portfolio" style="background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); padding: 50px; margin: 20px auto; max-width: 1200px;">
-    
-    <!-- Section Title -->
-    <div style="text-align: center; margin-bottom: 50px;">
-      <h2 style="font-size: 2.5rem; font-weight: 700; color: #2c3e50; position: relative; display: inline-block; padding-bottom: 5px; border-bottom: 4px solid transparent; border-image: linear-gradient(90deg, #667eea, #764ba2) 1;">Projects</h2>
-    </div>
-
-    <div style="max-width: 1140px; margin: 0 auto;">
-      
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 25px;">
-      
-        <!-- Portfolio Item 1 -->
-        <div style="background: #f8f9fa; border-radius: 15px; border-left: 4px solid #667eea; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
-          <img src="assets/img/portfolio/app-1.jpg" style="width: 100%; height: 200px; object-fit: cover; display: block;" alt="Text Translation">
-          <div style="padding: 25px;">
-            <h4 style="font-size: 1.3rem; font-weight: 700; color: #2c3e50; margin-bottom: 8px; margin-top: 0;">Text Translation</h4>
-            <p style="color: #764ba2; font-weight: 600; font-size: 0.9rem; margin-bottom: 15px; margin-top: 0;">Tech Stack: Transformer and LSTM Architecture, Python, NLP</p>
-            <p style="color: #555; line-height: 1.7; margin-bottom: 15px; margin-top: 0; font-size: 0.95rem;">Collaborated on a team project to develop a high-quality, efficient text translation system utilizing natural language processing techniques. We built a transformer architecture and LSTM, without relying on existing libraries, to translate text from French to English, achieving an impressive accuracy of 91%.</p>
-            <a href="https://github.com/Harsh-Shah012001/Text-Translation" target="_blank" style="display: inline-block; background: linear-gradient(90deg, #667eea, #764ba2); color: white; padding: 10px 25px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 25px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">View Project</a>
-          </div>
-        </div>
-
-        <!-- Portfolio Item 2 -->
-        <div style="background: #f8f9fa; border-radius: 15px; border-left: 4px solid #667eea; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
-          <img src="assets/img/portfolio/app-2.jpg" style="width: 100%; height: 200px; object-fit: cover; display: block;" alt="Image Manipulation Detection">
-          <div style="padding: 25px;">
-            <h4 style="font-size: 1.3rem; font-weight: 700; color: #2c3e50; margin-bottom: 8px; margin-top: 0;">Image Manipulation and Forgery Detection</h4>
-            <p style="color: #764ba2; font-weight: 600; font-size: 0.9rem; margin-bottom: 15px; margin-top: 0;">Tech Stack: Python, Image Segmentation Model, ResNet, UNet, CNN</p>
-            <p style="color: #555; line-height: 1.7; margin-bottom: 15px; margin-top: 0; font-size: 0.95rem;">Led a team to create an image manipulation detection model. Utilizing ResNet and Unet architectures, we achieved a 93% accuracy rate in identifying image manipulations on the CASIA dataset. Conducted a comprehensive survey of existing technologies and introduced an efficient approach to image manipulation detection.</p>
-            <a href="https://github.com/Harsh-Shah012001/Image_Manipulation_Detection_Streamlit_SegematationModel" target="_blank" style="display: inline-block; background: linear-gradient(90deg, #667eea, #764ba2); color: white; padding: 10px 25px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 25px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">View Project</a>
-          </div>
-        </div>
-
-        <!-- Portfolio Item 3 -->
-        <div style="background: #f8f9fa; border-radius: 15px; border-left: 4px solid #667eea; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
-          <img src="assets/img/portfolio/branding-1.jpg" style="width: 100%; height: 200px; object-fit: cover; display: block;" alt="Heart Disease Prediction">
-          <div style="padding: 25px;">
-            <h4 style="font-size: 1.3rem; font-weight: 700; color: #2c3e50; margin-bottom: 8px; margin-top: 0;">Heart Disease Prediction</h4>
-            <p style="color: #764ba2; font-weight: 600; font-size: 0.9rem; margin-bottom: 15px; margin-top: 0;">Tech Stack: Python, Support Vector Machines (SVM), Web Scraping, Data visualization</p>
-            <p style="color: #555; line-height: 1.7; margin-bottom: 15px; margin-top: 0; font-size: 0.95rem;">Developed a heart disease detection model utilizing Support Vector Machines (SVM). Conducted web scraping with Selenium to gather a dataset and its features. Achieved superior performance using the SVM classifier with an RBF kernel, indicating the best results for this dataset. The model effectively predicts the presence of heart disease in patients.</p>
-            <a href="https://github.com/Harsh-Shah012001/Heart-Disease-Detection" target="_blank" style="display: inline-block; background: linear-gradient(90deg, #667eea, #764ba2); color: white; padding: 10px 25px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 25px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">View Project</a>
-          </div>
-        </div>
-
-        <!-- Portfolio Item 4 -->
-        <div style="background: #f8f9fa; border-radius: 15px; border-left: 4px solid #667eea; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
-          <img src="assets/img/portfolio/books-1.jpg" style="width: 100%; height: 200px; object-fit: cover; display: block;" alt="Driver Drowsiness Detection">
-          <div style="padding: 25px;">
-            <h4 style="font-size: 1.3rem; font-weight: 700; color: #2c3e50; margin-bottom: 8px; margin-top: 0;">Driver Drowsiness Detection</h4>
-            <p style="color: #764ba2; font-weight: 600; font-size: 0.9rem; margin-bottom: 15px; margin-top: 0;">Tech Stack: OpenCV, Face Detection, Tensorflow, CNN</p>
-            <p style="color: #555; line-height: 1.7; margin-bottom: 15px; margin-top: 0; font-size: 0.95rem;">Developed a Python application to detect driver drowsiness in real-time using Convolutional Neural Networks (CNNs) and OpenCV. Achieved 90% accuracy in predicting driver drowsiness, with an integrated alarm system to alert drivers to pull over, ensuring timely intervention and accident prevention.</p>
-            <a href="https://github.com/Harsh-Shah012001/DRIVER_DROWSINESS_CNN_TNESORFLOW" target="_blank" style="display: inline-block; background: linear-gradient(90deg, #667eea, #764ba2); color: white; padding: 10px 25px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 25px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">View Project</a>
-          </div>
-        </div>
-
-        <!-- Portfolio Item 5 -->
-        <div style="background: #f8f9fa; border-radius: 15px; border-left: 4px solid #667eea; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
-          <img src="assets/img/portfolio/product-2.jpg" style="width: 100%; height: 200px; object-fit: cover; display: block;" alt="K-Nearest Neighbours">
-          <div style="padding: 25px;">
-            <h4 style="font-size: 1.3rem; font-weight: 700; color: #2c3e50; margin-bottom: 8px; margin-top: 0;">K-Nearest Neighbours</h4>
-            <p style="color: #764ba2; font-weight: 600; font-size: 0.9rem; margin-bottom: 15px; margin-top: 0;">Tech Stack: Data Analysis, Supervised Machine Learning, Python</p>
-            <p style="color: #555; line-height: 1.7; margin-bottom: 15px; margin-top: 0; font-size: 0.95rem;">The K-Nearest Neighbors (KNN) algorithm is a simple yet effective machine learning technique that classifies new data based on the similarity to existing data points. Known as a "lazy learner," KNN stores the dataset and performs actions at prediction time without a training phase. Suitable for both classification and regression, KNN can handle non-linear data.</p>
-            <a href="https://github.com/Harsh-Shah012001/KNN-Model" target="_blank" style="display: inline-block; background: linear-gradient(90deg, #667eea, #764ba2); color: white; padding: 10px 25px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 25px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">View Project</a>
-          </div>
-        </div>
-
-        <!-- Portfolio Item 6 -->
-        <div style="background: #f8f9fa; border-radius: 15px; border-left: 4px solid #667eea; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
-          <img src="assets/img/portfolio/product-1.jpg" style="width: 100%; height: 200px; object-fit: cover; display: block;" alt="Mall Customer Segmentation">
-          <div style="padding: 25px;">
-            <h4 style="font-size: 1.3rem; font-weight: 700; color: #2c3e50; margin-bottom: 8px; margin-top: 0;">Mall Customer Segmentation</h4>
-            <p style="color: #764ba2; font-weight: 600; font-size: 0.9rem; margin-bottom: 15px; margin-top: 0;">Tech Stack: K-means Clustering, Unsupervised Machine Learning, Python</p>
-            <p style="color: #555; line-height: 1.7; margin-bottom: 15px; margin-top: 0; font-size: 0.95rem;">Implemented K-Means Clustering to segment mall customers based on their income and spending scores. K-Means groups similar data points into clusters, with each cluster represented by a centroid. This project aimed to identify distinct customer types and patterns, allowing for targeted marketing strategies based on customer segmentation.</p>
-            <a href="https://github.com/Harsh-Shah012001/K-Means-Clustering" target="_blank" style="display: inline-block; background: linear-gradient(90deg, #667eea, #764ba2); color: white; padding: 10px 25px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 25px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">View Project</a>
-          </div>
-        </div>
-
+  <!-- Command palette -->
+  <div class="palette-wrap" id="palette-wrap" role="dialog" aria-modal="true" aria-label="Command palette">
+    <div class="palette">
+      <div class="palette-in">
+        <span class="prompt">&gt;</span>
+        <input id="palette-input" type="text" placeholder="Type a command or search…" spellcheck="false">
       </div>
+      <div class="palette-list" id="palette-list"></div>
     </div>
+  </div>
 
-  </section>
-</div>
-
-    <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 40px 0; margin: 0;">
-  <section id="publications" style="background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); padding: 50px; margin: 20px auto; max-width: 1200px;">
-
-    <!-- Section Title -->
-    <div style="text-align: center; margin-bottom: 50px;">
-      <h2 style="font-size: 2.5rem; font-weight: 700; color: #2c3e50; position: relative; display: inline-block; padding-bottom: 5px; border-bottom: 4px solid transparent; border-image: linear-gradient(90deg, #667eea, #764ba2) 1;">Publications</h2>
-      <p style="color: #666; font-size: 1.1rem; margin-top: 20px; margin-bottom: 0;">Explore my research contributions and findings through my publications.</p>
-    </div>
-
-    <div style="max-width: 1140px; margin: 0 auto;">
-
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 25px;">
-
-        <!-- Publication Item 1 -->
-        <div style="padding: 30px; background: #f8f9fa; border-radius: 15px; border-left: 4px solid #667eea; transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateX(5px)'; this.style.boxShadow='0 5px 15px rgba(0, 0, 0, 0.1)'" onmouseout="this.style.transform='translateX(0)'; this.style.boxShadow='none'">
-          <h4 style="font-size: 1.3rem; font-weight: 700; color: #2c3e50; margin-bottom: 15px; margin-top: 0; line-height: 1.4;">
-            <a href="https://www.irjet.net/archives/V10/i5/IRJET-V10I5206.pdf" target="_blank" style="color: #2c3e50; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#667eea'" onmouseout="this.style.color='#2c3e50'">Exploring the Potential of Generative Adversarial Networks: A Comparative Study of GAN</a>
-          </h4>
-          <p style="color: #555; line-height: 1.8; margin-bottom: 20px; margin-top: 0; text-align: justify;">The research explores Generative Adversarial Networks (GANs), focusing on their ability to generate realistic data samples. It covers various GAN types like vanilla GANs, MedGANs, StyleGANs, and CycleGANs, and examines their architectures, applications in text-to-image synthesis and media creation, and associated challenges such as mode collapse and instability. The study also highlights advancements like self-attention mechanisms and addresses ethical concerns related to data use and bias. Looking ahead, it discusses the potential of GANs for unsupervised learning and novel architectures, emphasizing the need for ongoing research to address current limitations and expand their applications.</p>
-          <a href="https://www.irjet.net/archives/V10/i5/IRJET-V10I5206.pdf" target="_blank" style="display: inline-block; background: linear-gradient(90deg, #667eea, #764ba2); color: white; padding: 10px 25px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: transform 0.3s, box-shadow 0.3s; margin-top: auto; align-self: flex-start;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 25px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">Read Publication</a>
-        </div>
-
-        <!-- Publication Item 2 -->
-        <div style="padding: 30px; background: #f8f9fa; border-radius: 15px; border-left: 4px solid #667eea; transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateX(5px)'; this.style.boxShadow='0 5px 15px rgba(0, 0, 0, 0.1)'" onmouseout="this.style.transform='translateX(0)'; this.style.boxShadow='none'">
-          <h4 style="font-size: 1.3rem; font-weight: 700; color: #2c3e50; margin-bottom: 15px; margin-top: 0; line-height: 1.4;">
-            <a href="https://www.ijraset.com/research-paper/autonomous-uav-swarms-powering-up-with-ai" target="_blank" style="color: #2c3e50; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#667eea'" onmouseout="this.style.color='#2c3e50'">Autonomous UAV Swarms: Powering Up with AI</a>
-          </h4>
-          <p style="color: #555; line-height: 1.8; margin-bottom: 20px; margin-top: 0; text-align: justify;">This study provides an in-depth analysis of autonomous UAV swarming, focusing on its benefits, core technologies, and future prospects. It explores the concept of decentralized coordination among multiple UAVs to achieve shared goals, detailing the fundamental principles, architectures, and swarm behaviors involved. The role of artificial intelligence, particularly reinforcement learning and particle swarm optimization, is highlighted for its impact on decision-making and task allocation within UAV swarms. Applications in infrastructure inspection, search and rescue, agriculture, and disaster response are examined, along with challenges like scalability, communication, and ethical concerns. The study also suggests future research directions, including advancements in swarm intelligence, edge computing, and human-swarm interaction.</p>
-          <a href="https://www.ijraset.com/research-paper/autonomous-uav-swarms-powering-up-with-ai" target="_blank" style="display: inline-block; background: linear-gradient(90deg, #667eea, #764ba2); color: white; padding: 10px 25px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: transform 0.3s, box-shadow 0.3s; margin-top: auto; align-self: flex-start;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 25px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">Read Publication</a>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-</div>
-
-
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

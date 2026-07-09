@@ -1,0 +1,6 @@
+# Local dev tooling
+.claude/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
